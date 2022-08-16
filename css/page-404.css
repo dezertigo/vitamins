@@ -339,8 +339,9 @@ body {
 }
 
 .footer__item--lh {
-  max-width: 160px;
   line-height: 21px;
+  margin-bottom: 14px;
+  transform: translateY(6px);
 }
 
 .footer__item--wrap {
