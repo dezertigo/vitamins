@@ -207,7 +207,7 @@ body {
 .sign-in__inner {
   max-width: 920px;
   background-color: #fff;
-  margin: 0 auto 83px;
+  margin: 0 auto 84px;
   padding: 60px 120px;
 }
 
@@ -215,13 +215,13 @@ body {
   text-align: center;
   font-size: 26px;
   line-height: 31px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .sign-in__text {
   text-align: center;
   line-height: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .sign-in__form {
@@ -229,7 +229,7 @@ body {
 }
 
 .sign-in__login-with {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   text-align: center;
   font-size: 20px;
   line-height: 24px;
@@ -285,13 +285,13 @@ body {
   margin-top: 15px;
   display: block;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .form__pass {
   position: absolute;
   right: 24px;
-  top: 50%;
+  top: 52%;
   transform: translateY(-50%);
   font-size: 14px;
   line-height: 19px;
@@ -330,7 +330,15 @@ body {
 .social-login__box {
   width: 32px;
   height: 32px;
-  margin-right: 30px;
+  margin-right: 40px;
+}
+
+.social-login__box--apple {
+  margin-right: 46px;
+}
+
+.social-login__box--facebook {
+  margin-right: 31px;
 }
 
 .social-login__text {
