@@ -41,6 +41,12 @@ a {
   font-weight: 700;
 }
 
+.policy__suptitle,
+.policy__title {
+  font-family: "Effra", sans-serif;
+  font-weight: 500;
+}
+
 .footer__title {
   font-family: "Effra", sans-serif;
   font-weight: 400;
@@ -220,6 +226,61 @@ body {
 
 .header__btn:hover {
   background-color: #6E5DDC;
+}
+
+.policy {
+  padding: 80px 0 40px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.policy__inner {
+  max-width: 682px;
+  margin: 0 auto 60px;
+}
+
+.policy__title {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 40px;
+}
+
+.policy__text {
+  font-size: 18px;
+  line-height: 32px;
+  color: #808080;
+}
+
+.policy__suptitle {
+  font-size: 26px;
+  line-height: 31px;
+  margin-bottom: 40px;
+}
+
+.policy__list {
+  margin: 40px 0;
+}
+
+.policy__item {
+  color: #808080;
+  font-size: 18px;
+  line-height: 32px;
+  padding-left: 50px;
+  position: relative;
+}
+
+.policy__item::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #ff7d4e;
+  top: 15px;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.policy__item + .policy__item {
+  margin-top: 15px;
 }
 
 .footer {
