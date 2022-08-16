@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home.min.css">
+    <title>Sign-in</title>
+  </head>
+<body>
+  <section class="sign-in">
+    <a class="logo" href="index.html">
+      <img class="logo__img" src="./img/icons/header-logo-icon.svg" alt="logo">
+    </a>
+    <div class="sign-in__inner">
+        <h4 class="sign-in__title">
+          Sign in with email
+        </h4>
+        <p class="sign-in__text">
+          Please enter your e-mail and password:
+        </p>
+        <form class="sign-in__form form" action="#">
+          <input class="form__input" type="email" required placeholder="Email">
+          <label class="form__label">
+            <input class="form__input" type="password" required placeholder="Password">
+            <a class="form__pass" href="#">Forgot password?</a>
+          </label>
+          <button class="form__btn" type="submit">Sign in</button>
+        </form>
+        <p class="sign-in__login-with">
+          or sign in with...
+        </p>
+        <div class="sign-in__social-login social-login">
+          <button class="social-login__btn" type="button">
+            <div class="social-login__box">
+              <img class="social-login__box-img" src="./img/icons/Login-icon_google.svg" alt="google">
+            </div>
+            <span class="social-login__text">
+              google
+            </span>
+          </button>
+          <button class="social-login__btn" type="button">
+            <div class="social-login__box">
+              <img class="social-login__box-img" src="./img/icons/Login-icon_apple.svg" alt="google">
+            </div>
+            <span class="social-login__text">
+              google
+            </span>
+          </button>
+          <button class="social-login__btn" type="button">
+            <div class="social-login__box">
+              <img class="social-login__box-img" src="./img/icons/Login-icon_facebook.svg" alt="google">
+            </div>
+            <span class="social-login__text">
+              google
+            </span>
+          </button>
+        </div>
+    </div>
+    <p class="sign-in__create">
+      Don't have an account? <a class="sign-in__create-link" href="sign-up.html">
+        Create one
+      </a>
+    </p>
+  </section>
+  <script src="./js/app.min.js"></script>
+</body>
+</html>

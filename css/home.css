@@ -318,9 +318,9 @@ body {
 }
 
 .footer__link--facebook::before {
-  background-image: url(../img/facebook-icon.svg);
+  background-image: url(../img/icons/facebook-icon.svg);
 }
 
 .footer__link--instagram::before {
-  background-image: url(../img/instagram-icon.svg);
+  background-image: url(../img/icons/instagram-icon.svg);
 }
