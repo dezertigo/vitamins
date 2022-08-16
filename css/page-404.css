@@ -36,9 +36,15 @@ a {
   color: inherit;
 }
 
+.error__btn,
 .header__btn {
   font-family: "Effra", sans-serif;
   font-weight: 700;
+}
+
+.error__title {
+  font-family: "Effra", sans-serif;
+  font-weight: 500;
 }
 
 .footer__title {
@@ -53,6 +59,7 @@ body {
   font-weight: 400;
 }
 
+.error__btn,
 .header__btn {
   cursor: pointer;
   display: flex;
@@ -220,6 +227,50 @@ body {
 
 .header__btn:hover {
   background-color: #6E5DDC;
+}
+
+.error {
+  padding: 100px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.error__inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.error__box {
+  margin-bottom: 80px;
+}
+
+.error__box-img {
+  margin: 0 auto;
+  transform: translateX(-3px);
+}
+
+.error__title {
+  font-size: 25px;
+  line-height: 31px;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.error__text {
+  line-height: 28px;
+  margin-bottom: 23px;
+  transform: translateX(-3px);
+}
+
+.error__btn {
+  max-width: 330px;
+  height: 65px;
+  background-color: #ff7d4e;
+  margin: 0 auto;
+  border-radius: 100px;
+  font-size: 20px;
+  line-height: 24px;
+  transform: translateX(-3px);
 }
 
 .footer {
