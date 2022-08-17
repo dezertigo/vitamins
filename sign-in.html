@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/sign-in.min.css">
     <title>Sign-in</title>
   </head>
-<body>
+<body class="sign-in-page">
   <section class="sign-in">
     <a class="logo sign-in__logo" href="index.html">
       <img class="logo__img sign-in__logo-img" src="./img/icons/header-logo-icon.svg" alt="logo">
@@ -56,6 +56,18 @@
             </span>
           </button>
         </div>
+    </div>
+    <div class="sign-in__inner sign-in__recovery-inner">
+      <p class="sign-in__recovery-title">
+        Recover password
+      </p>
+      <p class="sign-in__recovery-text">
+        Please enter your email:
+      </p>
+      <form class="form sign-in__form sign-in__recovery-form" action="#">
+        <input class="form__input form__recovery-input" type="email" required placeholder="Email">
+        <button class="form__btn" type="submit">Recover</button>
+      </form>
     </div>
     <p class="sign-in__create">
       Don't have an account? <a class="sign-in__create-link" href="sign-up.html">

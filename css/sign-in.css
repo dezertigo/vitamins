@@ -42,6 +42,7 @@ a {
 }
 
 .social-login__text,
+.sign-in__recovery-title,
 .sign-in__login-with,
 .sign-in__title {
   font-family: "Effra", sans-serif;
@@ -191,6 +192,7 @@ body {
 }
 
 .sign-in {
+  position: relative;
   padding: 30px 0 40px;
   background-color: #FAF8F6;
 }
@@ -206,9 +208,15 @@ body {
 
 .sign-in__inner {
   max-width: 920px;
+  width: 100%;
   background-color: #fff;
   margin: 0 auto 84px;
   padding: 60px 120px;
+}
+
+.sign-in__inner.hide {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .sign-in__title {
@@ -264,6 +272,36 @@ body {
   color: #ff7d4e;
 }
 
+.sign-in__recovery-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.sign-in__recovery-inner.active {
+  display: block;
+}
+
+.sign-in__recovery-title {
+  font-size: 26px;
+  line-height: 31px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sign-in__recovery-text {
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sign-in__recovery-form {
+  margin-bottom: 0;
+}
+
 .form {
   max-width: 444px;
   margin-inline: auto;
@@ -279,6 +317,14 @@ body {
   border: none;
   border-radius: 12px;
   background-color: #faf8f6;
+}
+
+.form__input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form__input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .form__label {
@@ -308,6 +354,10 @@ body {
   border: none;
   background-color: #ff7d4e;
   border-radius: 100px;
+}
+
+.form__recovery-input {
+  margin-bottom: 20px;
 }
 
 .social-login {
