@@ -607,12 +607,47 @@ body {
   right: 0;
 }
 
+.sign-up__form {
+  display: none;
+}
+
+.sign-up__form.active {
+  display: block;
+}
+
 .sign-up__form-input + .sign-up__form-input {
   margin-top: 15px;
 }
 
+.sign-up__form-label {
+  position: relative;
+  margin-top: 17px;
+}
+
+.sign-up__form-file {
+  padding-right: 150px;
+}
+
+.sign-up__form-upload {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 12px;
+  max-width: 104px;
+  width: 100%;
+  height: 36px;
+  border: none;
+  background-color: #ff7d4e;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+}
+
 .sign-up__form-btn {
-  margin-top: 20px;
+  margin-top: 23px;
+  max-width: 100%;
 }
 
 .sign-up__btn {
