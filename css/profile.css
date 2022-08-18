@@ -36,12 +36,14 @@ a {
   color: inherit;
 }
 
+.order__btn,
 .menu__item.active,
 .header__btn {
   font-family: "Effra", sans-serif;
   font-weight: 700;
 }
 
+.order__num,
 .card-item__btn,
 .profile__title {
   font-family: "Effra", sans-serif;
@@ -55,6 +57,11 @@ a {
   font-weight: 400;
 }
 
+.card-item__price {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 600;
+}
+
 .footer__copyright,
 html,
 body {
@@ -62,6 +69,7 @@ body {
   font-weight: 400;
 }
 
+.order__btn,
 .card-item__btn,
 .header__btn {
   cursor: pointer;
@@ -244,6 +252,11 @@ body {
   margin: 0 auto;
 }
 
+.profile__block {
+  max-width: 1040px;
+  width: 100%;
+}
+
 .profile__title {
   font-size: 36px;
   line-height: 43px;
@@ -265,8 +278,11 @@ body {
 }
 
 .subscruption {
-  max-width: 1040px;
-  width: 100%;
+  display: none;
+}
+
+.subscruption.active {
+  display: block;
 }
 
 .card-item {
@@ -334,6 +350,11 @@ body {
   line-height: 24px;
 }
 
+.card-item__price {
+  font-size: 18px;
+  line-height: 25px;
+}
+
 .card-item__delivery {
   display: flex;
   justify-content: space-between;
@@ -364,6 +385,102 @@ body {
 
 .card-item + .card-item {
   margin-top: 20px;
+}
+
+.order {
+  display: none;
+}
+
+.order.active {
+  display: block;
+}
+
+.order__inner {
+  padding: 40px;
+  background: #FAF8F6;
+  border-radius: 16px;
+}
+
+.order__inner + .order__inner {
+  margin-top: 20px;
+}
+
+.order__top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 8px;
+}
+
+.order__date {
+  opacity: 0.5;
+}
+
+.order__num {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.order__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  margin-bottom: 37px;
+}
+
+.order__item {
+  padding: 0;
+  max-width: 460px;
+}
+
+.order__card-top {
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.order__text {
+  margin-bottom: 50px;
+}
+
+.order__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order__amount {
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.order__amount span {
+  display: block;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 4px;
+  color: #000;
+  font-weight: 600;
+}
+
+.order__btn {
+  max-width: 154px;
+  width: 100%;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #ff7d4e;
+  line-height: 19px;
+}
+
+.order__item + .order__item {
+  margin-top: 0;
 }
 
 .footer {
