@@ -314,7 +314,53 @@
             </div>
           </div>
         </div>
-        
+        <div class="account profile__block active">
+          <div class="account__top">
+            <p class="profile__title">
+              Account Overview
+            </p>
+            <p class="account__type active">
+              Regular customer
+            </p>
+            <p class="account__type">
+              Wholesale customer
+            </p>
+          </div>
+          <form class="account__form" action="#">
+            <label class="account__label">First Name
+              <input class="account__input" type="text" placeholder="John">
+            </label>
+            <label class="account__label">Last Name
+              <input class="account__input" type="text" placeholder="Smith">
+            </label>
+            <label class="account__label">Address Line 1
+              <input class="account__input" type="text" placeholder="Hilton st. 123">
+            </label>
+            <label class="account__label">Address Line 2
+              <input class="account__input" type="text">
+            </label>
+            <label class="account__label">City
+              <input class="account__input" type="text" placeholder="New York">
+            </label>
+            <label class="account__label account__label--state account__label--select">State / Province
+              <input class="account__input account__select" type="text" placeholder="NY" disabled>
+            </label>
+            <label class="account__label account__label--state">ZIP / Postal Code
+              <input class="account__input" type="text" placeholder="213 822">
+            </label>
+            <label class="account__label">Email
+              <input class="account__input" type="email" placeholder="johnsmith@gmail.com">
+            </label>
+            <label class="account__label">Phone Number
+              <input class="account__input" type="phone" placeholder="8 029 876 56 21">
+            </label>
+            <label class="account__label account__label--wholesale">Wholesale purchase permission
+              <input class="account__input" type="text" placeholder="qwer123.pdf">
+              <a class="account__btn-file" href="#">Update</a>
+            </label>
+            <button class="account__btn">Save</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>

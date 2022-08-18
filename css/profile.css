@@ -36,6 +36,7 @@ a {
   color: inherit;
 }
 
+.account__btn,
 .order__btn,
 .menu__item.active,
 .header__btn {
@@ -43,6 +44,7 @@ a {
   font-weight: 700;
 }
 
+.account__type,
 .order__num,
 .card-item__btn,
 .profile__title {
@@ -69,6 +71,8 @@ body {
   font-weight: 400;
 }
 
+.account__btn,
+.account__btn-file,
 .order__btn,
 .card-item__btn,
 .header__btn {
@@ -481,6 +485,128 @@ body {
 
 .order__item + .order__item {
   margin-top: 0;
+}
+
+.account {
+  display: none;
+}
+
+.account.active {
+  display: block;
+}
+
+.account__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.account__type {
+  font-size: 22px;
+  display: none;
+}
+
+.account__type.active {
+  display: block;
+}
+
+.account__form {
+  max-width: 920px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.account__label {
+  max-width: 444px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.account__label--state {
+  max-width: 206px;
+}
+
+.account__label--select {
+  cursor: pointer;
+}
+
+.account__label--select::after {
+  content: "";
+  position: absolute;
+  right: 24px;
+  top: 52px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 9px;
+  background: url(../img/profile/Back_arrow.svg) no-repeat;
+}
+
+.account__label--select input {
+  cursor: pointer;
+}
+
+.account__label--wholesale {
+  max-width: 100%;
+  display: none;
+}
+
+.account__label--wholesale.active {
+  display: block;
+}
+
+.account__label--wholesale input {
+  max-width: 444px;
+}
+
+.account__input {
+  margin-top: 5px;
+  width: 100%;
+  display: block;
+  padding: 15px 24px;
+  background: #FAF8F6;
+  border-radius: 12px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
+  border: none;
+}
+
+.account__input::-moz-placeholder {
+  color: #000;
+}
+
+.account__input::placeholder {
+  color: #000;
+}
+
+.account__btn-file {
+  position: absolute;
+  left: 328px;
+  top: 34px;
+  background-color: #ff7d4e;
+  max-width: 104px;
+  width: 100%;
+  height: 36px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.account__btn {
+  max-width: 154px;
+  width: 100%;
+  height: 50px;
+  background-color: #ff7d4e;
+  border-radius: 100px;
+  border: none;
+  line-height: 19px;
+  margin-top: 10px;
 }
 
 .footer {
