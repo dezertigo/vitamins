@@ -609,6 +609,10 @@ body {
   margin-top: 10px;
 }
 
+.payments {
+  display: none;
+}
+
 .payments__form {
   max-width: 674px;
   width: 100%;
@@ -666,6 +670,14 @@ body {
 
 .payments__btn {
   margin-top: 130px;
+}
+
+.changepass__form {
+  max-width: 444px;
+}
+
+.changepass__input {
+  margin-bottom: 30px;
 }
 
 .footer {
