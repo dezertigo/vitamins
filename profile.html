@@ -9,7 +9,6 @@
   </head>
 <body>
   <header class="header">
-    <div class="container">
       <div class="header__inner">
         <a class="logo" href="index.html">
           <img class="logo__img" src="../img/icons/header-logo-icon.svg" alt="Logo">
@@ -24,14 +23,13 @@
           <a class="header__btn" href="quiz.html">Take the quiz</a>
         </div>
       </div>
-    </div>
 </header>
   <main class="main">
     <section class="profile">
       <div class="profile__wrapper">
         <nav class="menu">
           <ul class="menu__list">
-            <li class="menu__item active">
+            <li class="menu__item">
               <a class="menu__link" href="#">
                 Subscriptions
               </a>
@@ -41,7 +39,7 @@
                 Orders
               </a>
             </li>
-            <li class="menu__item">
+            <li class="menu__item active">
               <a class="menu__link" href="#">
                 Account Overview
               </a>
@@ -218,7 +216,7 @@
                         1 x Ortho Molecular Products Adrene Vive Capsules
                       </p>
                       <p class="card-item__price order__price">
-                        $31.26
+                        $84.00
                       </p>
                     </div>
                   </div>
@@ -235,10 +233,10 @@
                     </p>
                     <div class="card-item__top order__card-top">
                       <p class="card-item__text order__text">
-                        3 x Metagenics - 500-C Methoxyflavone
+                        2 х Standard Process Thymus PMG 90 Tablets
                       </p>
                       <p class="card-item__price order__price">
-                        $32.45
+                        $84.00
                       </p>
                     </div>
                   </div>
@@ -299,7 +297,7 @@
                         1 x Ortho Molecular Products Adrene Vive Capsules
                       </p>
                       <p class="card-item__price order__price">
-                        $31.26
+                        $84.00
                       </p>
                     </div>
                   </div>
@@ -354,8 +352,8 @@
             <label class="account__label">Phone Number
               <input class="account__input" type="phone" placeholder="8 029 876 56 21">
             </label>
-            <label class="account__label account__label--wholesale">Wholesale purchase permission
-              <input class="account__input" type="text" placeholder="qwer123.pdf">
+            <label class="account__label account__label--wholesale active">Wholesale purchase permission
+              <input class="account__input" type="text" placeholder="123qwer.pdf">
               <a class="account__btn-file" href="#">Update</a>
             </label>
             <button class="account__btn">Save</button>
@@ -372,14 +370,14 @@
             <label class="payments__label account__label"> Expiration
               <input class="payments__input" type="text" placeholder="12/21">
             </label>
-            <label class="payments__label account__label"> CVC
+            <label class="payments__label account__label payments__label--cvc"> CVC
               <input class="payments__input" type="password" placeholder="&bull;&bull;&bull;">
             </label>
             <button class="payments__btn account__btn">Save</button>
           </form>
         </div>
-        <div class="changepass profile__block active">
-          <p class="profile__title">
+        <div class="changepass profile__block  active">
+          <p class="profile__title changepass__title">
             Change Password
           </p>
           <form class="changepass__form">
@@ -392,7 +390,7 @@
             <label class="changepass__label account__label">Confirm New Password
               <input class="changepass__input account__input" type="password">
             </label>
-            <button class="changepass_btn account__btn">Save</button>
+            <button class="changepass__btn account__btn">Save</button>
           </form>
         </div>
       </div>

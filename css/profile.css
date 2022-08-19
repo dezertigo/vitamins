@@ -206,13 +206,14 @@ body {
 }
 
 .container {
-  max-width: 1730px;
+  max-width: 1430px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .header {
   padding: 30px;
+  padding-left: 35px;
 }
 
 .header__inner {
@@ -245,31 +246,37 @@ body {
 }
 
 .profile {
-  padding: 50px 0 100px;
+  padding: 48px 0 100px;
   border: 1px solid rgba(0, 0, 0, 0.07);
 }
 
 .profile__wrapper {
   display: flex;
   justify-content: space-between;
-  max-width: 1400px;
+  max-width: 1392px;
   margin: 0 auto;
 }
 
 .profile__block {
   max-width: 1040px;
   width: 100%;
+  display: none;
+}
+
+.profile__block.active {
+  display: block;
 }
 
 .profile__title {
   font-size: 36px;
   line-height: 43px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .menu {
   max-width: 220px;
   width: 100%;
+  transform: translate(-2px, -6px);
 }
 
 .menu__item {
@@ -285,14 +292,13 @@ body {
   display: none;
 }
 
-.subscruption.active {
-  display: block;
-}
-
 .card-item {
   background: #FAF8F6;
   border-radius: 16px;
-  padding: 30px 40px;
+  padding-left: 41px;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  padding-right: 30px;
   display: flex;
   gap: 30px;
 }
@@ -323,6 +329,10 @@ body {
 
 .card-item__content {
   width: 100%;
+}
+
+.card-item__desc {
+  margin-top: 10px;
 }
 
 .card-item__category {
@@ -357,12 +367,14 @@ body {
 .card-item__price {
   font-size: 18px;
   line-height: 25px;
+  transform: translateX(-11px);
 }
 
 .card-item__delivery {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transform: translateY(-1px);
 }
 
 .card-item__date-delivery {
@@ -373,7 +385,7 @@ body {
 }
 
 .card-item__date-send {
-  font-size: 22px;
+  line-height: 22px;
 }
 
 .card-item__btn {
@@ -385,22 +397,19 @@ body {
   color: #d32d2c;
   background-color: transparent;
   border: 2px solid rgba(211, 45, 44, 0.2);
+  transform: translateX(-10px);
 }
 
 .card-item + .card-item {
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .order {
   display: none;
 }
 
-.order.active {
-  display: block;
-}
-
 .order__inner {
-  padding: 40px;
+  padding: 41px 40px 44px 41px;
   background: #FAF8F6;
   border-radius: 16px;
 }
@@ -423,7 +432,7 @@ body {
 
 .order__num {
   font-size: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .order__wrapper {
@@ -431,14 +440,15 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 46px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-  margin-bottom: 37px;
+  margin-bottom: 34px;
 }
 
 .order__item {
   padding: 0;
   max-width: 460px;
+  gap: 30px;
 }
 
 .order__card-top {
@@ -450,13 +460,18 @@ body {
 }
 
 .order__text {
-  margin-bottom: 50px;
+  margin-bottom: 52px;
+}
+
+.order__price {
+  transform: translateX(0);
 }
 
 .order__footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transform: translateY(7px);
 }
 
 .order__amount {
@@ -472,6 +487,7 @@ body {
   margin-bottom: 4px;
   color: #000;
   font-weight: 600;
+  transform: translateY(3px);
 }
 
 .order__btn {
@@ -491,18 +507,16 @@ body {
   display: none;
 }
 
-.account.active {
-  display: block;
-}
-
 .account__top {
   display: flex;
   justify-content: space-between;
+  max-width: 923px;
 }
 
 .account__type {
   font-size: 22px;
   display: none;
+  transform: translateY(14px);
 }
 
 .account__type.active {
@@ -510,21 +524,22 @@ body {
 }
 
 .account__form {
-  max-width: 920px;
+  max-width: 923px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 33px;
+  row-gap: 32px;
 }
 
 .account__label {
-  max-width: 444px;
+  max-width: 443px;
   width: 100%;
   font-size: 14px;
   line-height: 19px;
   color: rgba(0, 0, 0, 0.5);
   position: relative;
+  transform: translateX(3px);
 }
 
 .account__label--state {
@@ -560,7 +575,9 @@ body {
 }
 
 .account__label--wholesale input {
-  max-width: 444px;
+  max-width: 443px;
+  font-size: 16px;
+  margin-top: 4px;
 }
 
 .account__input {
@@ -586,8 +603,8 @@ body {
 
 .account__btn-file {
   position: absolute;
-  left: 328px;
-  top: 34px;
+  left: 330px;
+  top: 35px;
   background-color: #ff7d4e;
   max-width: 104px;
   width: 100%;
@@ -607,6 +624,7 @@ body {
   border: none;
   line-height: 19px;
   margin-top: 10px;
+  transform: translateX(5px);
 }
 
 .payments {
@@ -623,6 +641,7 @@ body {
        column-gap: 60px;
   justify-content: space-between;
   background: url(../img/profile/payment-img.png) no-repeat;
+  background-position-x: 2px;
 }
 
 .payments__label {
@@ -637,7 +656,7 @@ body {
 .payments__label:first-child .payments__input {
   max-width: 410px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .payments__label:nth-of-type(3) {
@@ -646,6 +665,10 @@ body {
 
 .payments__label:nth-of-type(3) .payments__input {
   margin-left: auto;
+}
+
+.payments__label--cvc {
+  transform: translateY(40px);
 }
 
 .payments__input {
@@ -669,20 +692,36 @@ body {
 }
 
 .payments__btn {
-  margin-top: 130px;
+  margin-top: 129px;
+  transform: translateX(-39px);
+}
+
+.changepass {
+  display: none;
+  transform: translateX(1px);
+}
+
+.changepass__title {
+  margin-bottom: 39px;
 }
 
 .changepass__form {
-  max-width: 444px;
+  max-width: 443px;
+  transform: translateX(3px);
 }
 
 .changepass__input {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+}
+
+.changepass__btn {
+  margin-top: 40px;
+  transform: translateX(0);
 }
 
 .footer {
   background: #FAF8F6;
-  padding: 70px 198px;
+  padding: 70px 201px 66px 188px;
 }
 
 .footer__inner {
@@ -719,21 +758,23 @@ body {
 .footer__info--first {
   max-width: 315px;
   width: 100%;
-  margin-left: 73px;
+  margin-left: 82px;
 }
 
 .footer__info--second {
   max-width: 197px;
+  transform: translate(9px, -11px);
 }
 
 .footer__info--third {
   max-width: 211px;
+  transform: translate(19px, -11px);
 }
 
 .footer__list--wrap {
   display: flex;
   flex-flow: column wrap;
-  max-width: 185px;
+  max-width: 183px;
   width: 100%;
   max-height: 190px;
 }
@@ -756,7 +797,7 @@ body {
 }
 
 .footer__item--social {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .footer__link--social {

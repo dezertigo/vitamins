@@ -169,7 +169,7 @@ body {
 }
 
 .container {
-  max-width: 1730px;
+  max-width: 1430px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -179,7 +179,7 @@ body {
 }
 
 .quiz__step {
-  padding: 30px 0;
+  padding: 30px 35px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -334,10 +334,15 @@ body {
   margin-top: 20px;
 }
 
+.quiz__step--1,
+.quiz__step--9 {
+  display: flex;
+}
+
 .quiz__step--1::before,
 .quiz__step--9::before {
   top: 116px;
-  left: 55%;
+  left: 52.6%;
   width: 156px;
   height: 156px;
   border-radius: 100%;
@@ -347,23 +352,23 @@ body {
 .quiz__step--1::after,
 .quiz__step--9::after {
   bottom: 0;
-  right: -40px;
+  right: 10px;
   width: 406px;
   height: 307px;
   background: url(../img/quiz/ellipse-01.svg) no-repeat;
 }
 
 .quiz__step--2::before {
-  top: 220px;
-  right: 36%;
+  top: 107px;
+  right: 37%;
   background: url(../img/quiz/ellipse-2.svg) no-repeat;
   width: 162px;
   height: 162px;
 }
 
 .quiz__step--2::after {
-  bottom: 220px;
-  right: 100px;
+  bottom: 133px;
+  right: 98px;
   width: 85px;
   height: 85px;
   background: #ffca78;
@@ -372,7 +377,7 @@ body {
 
 .quiz__step--3::before {
   top: 106px;
-  right: 81px;
+  right: 134px;
   width: 155px;
   height: 155px;
   border-radius: 100%;
@@ -380,7 +385,7 @@ body {
 }
 
 .quiz__step--3::after {
-  right: 552px;
+  right: 33.3%;
   bottom: 0;
   width: 210px;
   height: 265px;
@@ -389,7 +394,7 @@ body {
 
 .quiz__step--4::before {
   top: 0;
-  right: 70px;
+  right: 116px;
   width: 210px;
   height: 275px;
   background: url(../img/quiz/ellipse-4.svg) no-repeat;
@@ -397,16 +402,20 @@ body {
 
 .quiz__step--4::after {
   bottom: 108px;
-  right: 35%;
+  right: 34.4%;
   width: 177px;
   height: 177px;
   border-radius: 100%;
   background-color: #FFCA78;
 }
 
+.quiz__step--5 {
+  overflow: hidden;
+}
+
 .quiz__step--5::before {
   top: 128px;
-  right: 34%;
+  right: 34.7%;
   background: url(../img/quiz/ellipse-5.svg) no-repeat;
   width: 200px;
   height: 200px;
@@ -414,7 +423,7 @@ body {
 
 .quiz__step--5::after {
   bottom: 140px;
-  right: -247px;
+  right: -197px;
   width: 308px;
   height: 308px;
   border-radius: 100%;
@@ -423,7 +432,7 @@ body {
 
 .quiz__step--6::before {
   top: 161px;
-  right: 56px;
+  right: 114px;
   width: 154px;
   height: 154px;
   border-radius: 100%;
@@ -431,17 +440,21 @@ body {
 }
 
 .quiz__step--6::after {
-  bottom: 64px;
-  right: 38%;
+  bottom: 62px;
+  right: 38.4%;
   background: url(../img/quiz/ellipse-2.svg) no-repeat;
   width: 162px;
   height: 162px;
   transform: rotate(90deg);
 }
 
+.quiz__step--7 {
+  overflow: hidden;
+}
+
 .quiz__step--7::before {
   top: 103px;
-  right: -269px;
+  right: -205px;
   width: 418px;
   height: 212px;
   background: url(../img/quiz/ellipse-7.svg) no-repeat;
@@ -458,7 +471,7 @@ body {
 
 .quiz__step--8::before {
   top: 145px;
-  right: 38%;
+  right: 38.3%;
   width: 172px;
   height: 171px;
   background: url(../img/quiz/ellipse-8.svg) no-repeat;
@@ -466,13 +479,9 @@ body {
 
 .quiz__step--8::after {
   bottom: 52px;
-  right: 23px;
+  right: 58px;
   width: 148px;
   height: 148px;
   border-radius: 100%;
   background: #FFCA78;
-}
-
-.quiz__step--9 {
-  display: flex;
 }
