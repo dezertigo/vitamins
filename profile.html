@@ -314,7 +314,7 @@
             </div>
           </div>
         </div>
-        <div class="account profile__block active">
+        <div class="account profile__block">
           <div class="account__top">
             <p class="profile__title">
               Account Overview
@@ -359,6 +359,23 @@
               <a class="account__btn-file" href="#">Update</a>
             </label>
             <button class="account__btn">Save</button>
+          </form>
+        </div>
+        <div class="payments profile__block active">
+          <p class="profile__title">
+            Payment methods
+          </p>
+          <form class="payments__form" action="#">
+            <label class="payments__label account__label"> Card Number
+              <input class="payments__input" type="text" placeholder="6477 1693 3042 6031">
+            </label>
+            <label class="payments__label account__label"> Expiration
+              <input class="payments__input" type="text" placeholder="12/21">
+            </label>
+            <label class="payments__label account__label"> CVC
+              <input class="payments__input" type="password" placeholder="&bull;&bull;&bull;">
+            </label>
+            <button class="payments__btn account__btn">Save</button>
           </form>
         </div>
       </div>
