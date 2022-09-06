@@ -334,11 +334,6 @@ body {
   margin-top: 20px;
 }
 
-.quiz__step--1,
-.quiz__step--9 {
-  display: flex;
-}
-
 .quiz__step--1::before,
 .quiz__step--9::before {
   top: 116px;
@@ -449,6 +444,7 @@ body {
 }
 
 .quiz__step--7 {
+  display: flex;
   overflow: hidden;
 }
 

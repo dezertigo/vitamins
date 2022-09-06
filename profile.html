@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/profile.min.css">
     <title>Profile</title>
   </head>
-<body>
+<body class="profile">
   <header class="header">
       <div class="header__inner">
         <a class="logo" href="index.html">
@@ -27,30 +27,30 @@
   <main class="main">
     <section class="profile">
       <div class="profile__wrapper">
-        <nav class="menu">
-          <ul class="menu__list">
+        <nav class="menu tabs">
+          <ul class="menu__list tabs__list">
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link tabs__link" href="#" data-tab="#tab_1">
                 Subscriptions
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link tabs__link" href="#" data-tab="#tab_2">
                 Orders
               </a>
             </li>
             <li class="menu__item active">
-              <a class="menu__link" href="#">
+              <a class="menu__link tabs__link" href="#" data-tab="#tab_3">
                 Account Overview
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link tabs__link" href="#" data-tab="#tab_4">
                 Payment methods
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link tabs__link" href="#" data-tab="#tab_5">
                 Change Password
               </a>
             </li>
@@ -61,7 +61,7 @@
             </li>
           </ul>
         </nav>
-        <div class="subscruption profile__block">
+        <div class="subscruption profile__block tabs__item active" id="tab_1">
           <p class="subscruption__title profile__title">
             Subscriptions
           </p>
@@ -165,7 +165,7 @@
             </div>
           </div>
         </div>
-        <div class="order profile__block">
+        <div class="order profile__block tabs__item" id="tab_2">
           <p class="profile__title">
             Orders
           </p>
@@ -312,7 +312,7 @@
             </div>
           </div>
         </div>
-        <div class="account profile__block">
+        <div class="account profile__block tabs__item" id="tab_3">
           <div class="account__top">
             <p class="profile__title">
               Account Overview
@@ -359,7 +359,7 @@
             <button class="account__btn">Save</button>
           </form>
         </div>
-        <div class="payments profile__block">
+        <div class="payments profile__block tabs__item" id="tab_4">
           <p class="profile__title">
             Payment methods
           </p>
@@ -376,7 +376,7 @@
             <button class="payments__btn account__btn">Save</button>
           </form>
         </div>
-        <div class="changepass profile__block  active">
+        <div class="changepass profile__block tabs__item" id="tab_5">
           <p class="profile__title changepass__title">
             Change Password
           </p>

@@ -38,7 +38,7 @@ a {
 
 .account__btn,
 .order__btn,
-.menu__item.active,
+.menu__link.active,
 .header__btn {
   font-family: "Effra", sans-serif;
   font-weight: 700;
