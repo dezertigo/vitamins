@@ -188,6 +188,11 @@ body {
   font-style: normal;
 }
 
+.chromeperfectpixel-layer-img {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
 html,
 body {
   height: 100%;
@@ -214,11 +219,13 @@ body {
 .header {
   padding: 30px;
   padding-left: 35px;
+  position: relative;
 }
 
 .header__inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__user-nav {
@@ -243,6 +250,10 @@ body {
 
 .header__btn:hover {
   background-color: #6E5DDC;
+}
+
+.burger {
+  display: none;
 }
 
 .profile {
@@ -721,7 +732,7 @@ body {
 
 .footer {
   background: #FAF8F6;
-  padding: 70px 201px 66px 188px;
+  padding: 70px 0 66px;
 }
 
 .footer__inner {
@@ -731,7 +742,7 @@ body {
 
 .footer__logo {
   display: block;
-  margin-bottom: 60px;
+  margin-bottom: 59px;
 }
 
 .footer__copyright {
@@ -742,6 +753,10 @@ body {
   opacity: 0.3;
 }
 
+.footer__copyright--mobile {
+  display: none;
+}
+
 .footer__title {
   font-size: 18px;
   line-height: 45px;
@@ -749,34 +764,39 @@ body {
   margin-bottom: 5px;
 }
 
+.footer__wrap {
+  transform: translate(2px, -2px);
+}
+
 .footer__info {
   max-width: 206px;
   width: 100%;
-  transform: translate(0px, -11px);
+  transform: translate(2px, -13px);
 }
 
 .footer__info--first {
   max-width: 315px;
   width: 100%;
-  margin-left: 82px;
+  margin-left: 73px;
 }
 
 .footer__info--second {
   max-width: 197px;
-  transform: translate(9px, -11px);
+  transform: translate(3px, -13px);
 }
 
 .footer__info--third {
   max-width: 211px;
-  transform: translate(19px, -11px);
+  transform: translate(3px, -12px);
 }
 
 .footer__list--wrap {
   display: flex;
   flex-flow: column wrap;
-  max-width: 183px;
+  max-width: 185px;
   width: 100%;
   max-height: 190px;
+  height: 100%;
 }
 
 .footer__item {
@@ -822,4 +842,148 @@ body {
 
 .footer__link--instagram::before {
   background-image: url(../img/icons/instagram-icon.svg);
+}
+
+@media (max-width: 993px) {
+  .container {
+    padding: 0 20px 0 19px;
+  }
+
+  .header {
+    padding: 15px 20px 15px 24px;
+  }
+
+  .header .logo {
+    max-width: 33.6px;
+    transform: translateX(17px);
+  }
+
+  .header__user-nav {
+    gap: 0;
+  }
+
+  .header__user-link:first-child {
+    transform: translate(100%, -200%);
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    width: 24px;
+    height: 18px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .burger::before,
+  .burger::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+
+  .burger::before {
+    top: 0;
+  }
+
+  .burger::after {
+    bottom: 0;
+  }
+
+  .burger__btn {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .footer__title {
+    margin-bottom: 2px;
+  }
+
+  .footer__info--first {
+    margin-left: 0;
+    max-width: 160px;
+  }
+
+  .footer__info--second {
+    transform: translate(0, -13px);
+  }
+
+  .footer__info--second .footer__title {
+    margin-bottom: 7px;
+  }
+
+  .footer__list--wrap {
+    display: block;
+    max-height: unset;
+  }
+
+  .footer__item {
+    line-height: 19px;
+    margin-bottom: 16px;
+  }
+
+  .footer__item--lh {
+    margin-bottom: 22px;
+  }
+}
+
+@media (max-width: 769px) {
+  .footer {
+    padding: 42px 0;
+  }
+
+  .footer__inner {
+    flex-wrap: wrap;
+    row-gap: 27px;
+    padding-bottom: 15px;
+    position: relative;
+  }
+
+  .footer__logo {
+    margin-bottom: 0;
+    max-width: 42px;
+    min-height: 50px;
+  }
+
+  .footer__copyright {
+    display: none;
+  }
+
+  .footer__copyright--mobile {
+    display: block;
+    max-width: 235px;
+  }
+
+  .footer__wrap {
+    flex: 1 1 100%;
+  }
+
+  .footer__info {
+    max-width: 160px;
+    transform: translate(0, 0);
+  }
+
+  .footer__info--third {
+    transform: translate(0, -13px);
+  }
+
+  .footer__info--third .footer__title {
+    margin-bottom: 9px;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer__info {
+    max-width: 132px;
+  }
 }

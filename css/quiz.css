@@ -151,6 +151,11 @@ body {
   font-style: normal;
 }
 
+.chromeperfectpixel-layer-img {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
 html,
 body {
   height: 100%;
@@ -334,6 +339,10 @@ body {
   margin-top: 20px;
 }
 
+.quiz__step.active {
+  display: flex;
+}
+
 .quiz__step--1::before,
 .quiz__step--9::before {
   top: 116px;
@@ -444,7 +453,6 @@ body {
 }
 
 .quiz__step--7 {
-  display: flex;
   overflow: hidden;
 }
 
@@ -480,4 +488,10 @@ body {
   height: 148px;
   border-radius: 100%;
   background: #FFCA78;
+}
+
+@media (max-width: 993px) {
+  .container {
+    padding: 0 20px 0 19px;
+  }
 }

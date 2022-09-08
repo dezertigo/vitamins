@@ -168,6 +168,11 @@ body {
   font-style: normal;
 }
 
+.chromeperfectpixel-layer-img {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
 html,
 body {
   height: 100%;
@@ -393,4 +398,10 @@ body {
 
 .social-login__text {
   font-size: 20px;
+}
+
+@media (max-width: 993px) {
+  .container {
+    padding: 0 20px 0 19px;
+  }
 }
