@@ -36,15 +36,16 @@ a {
   color: inherit;
 }
 
-.form__btn {
+body.sign-in-page .form__btn,
+.header__btn {
   font-family: "Effra", sans-serif;
   font-weight: 700;
 }
 
-.social-login__text,
-.sign-in__recovery-title,
-.sign-in__login-with,
-.sign-in__title {
+body.sign-in-page .social-login__text,
+body.sign-in-page .sign-in__recovery-title,
+body.sign-in-page .sign-in__login-with,
+body.sign-in-page .sign-in__title {
   font-family: "Effra", sans-serif;
   font-weight: 500;
 }
@@ -55,7 +56,8 @@ body {
   font-weight: 400;
 }
 
-.form__btn {
+body.sign-in-page .form__btn,
+.header__btn {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -196,22 +198,66 @@ body {
   padding: 0 15px;
 }
 
-.sign-in {
+.header {
+  padding: 30px;
+  padding-left: 35px;
+  position: relative;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__user-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__user-link {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.header__btn {
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #ff7d4e;
+  width: 154px;
+  height: 50px;
+  border-radius: 100px;
+}
+
+.header__btn:hover {
+  background-color: #6E5DDC;
+}
+
+.burger {
+  display: none;
+}
+
+body.sign-in-page .header {
+  display: none;
+}
+
+body.sign-in-page .sign-in {
   position: relative;
   padding: 30px 0 40px;
   background-color: #FAF8F6;
 }
 
-.sign-in__logo {
+body.sign-in-page .sign-in__logo {
   margin-bottom: 83px;
   display: block;
 }
 
-.sign-in__logo-img {
+body.sign-in-page .sign-in__logo-img {
   margin: 0 auto;
 }
 
-.sign-in__inner {
+body.sign-in-page .sign-in__inner {
   max-width: 920px;
   width: 100%;
   background-color: #fff;
@@ -219,29 +265,29 @@ body {
   padding: 60px 120px;
 }
 
-.sign-in__inner.hide {
+body.sign-in-page .sign-in__inner.hide {
   opacity: 0;
   pointer-events: none;
 }
 
-.sign-in__title {
+body.sign-in-page .sign-in__title {
   text-align: center;
   font-size: 26px;
   line-height: 31px;
   margin-bottom: 8px;
 }
 
-.sign-in__text {
+body.sign-in-page .sign-in__text {
   text-align: center;
   line-height: 28px;
   margin-bottom: 23px;
 }
 
-.sign-in__form {
+body.sign-in-page .sign-in__form {
   margin-bottom: 40px;
 }
 
-.sign-in__login-with {
+body.sign-in-page .sign-in__login-with {
   margin-bottom: 41px;
   text-align: center;
   font-size: 20px;
@@ -249,8 +295,8 @@ body {
   position: relative;
 }
 
-.sign-in__login-with::before,
-.sign-in__login-with::after {
+body.sign-in-page .sign-in__login-with::before,
+body.sign-in-page .sign-in__login-with::after {
   content: "";
   position: absolute;
   width: 240px;
@@ -260,24 +306,24 @@ body {
   transform: translateY(-50%);
 }
 
-.sign-in__login-with::before {
+body.sign-in-page .sign-in__login-with::before {
   left: 0;
 }
 
-.sign-in__login-with::after {
+body.sign-in-page .sign-in__login-with::after {
   right: 0;
 }
 
-.sign-in__create {
+body.sign-in-page .sign-in__create {
   text-align: center;
   line-height: 22px;
 }
 
-.sign-in__create-link {
+body.sign-in-page .sign-in__create-link {
   color: #ff7d4e;
 }
 
-.sign-in__recovery-inner {
+body.sign-in-page .sign-in__recovery-inner {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -285,34 +331,34 @@ body {
   display: none;
 }
 
-.sign-in__recovery-inner.active {
+body.sign-in-page .sign-in__recovery-inner.active {
   display: block;
 }
 
-.sign-in__recovery-title {
+body.sign-in-page .sign-in__recovery-title {
   font-size: 26px;
   line-height: 31px;
   text-align: center;
   margin-bottom: 10px;
 }
 
-.sign-in__recovery-text {
+body.sign-in-page .sign-in__recovery-text {
   font-size: 16px;
   line-height: 28px;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.sign-in__recovery-form {
+body.sign-in-page .sign-in__recovery-form {
   margin-bottom: 0;
 }
 
-.form {
+body.sign-in-page .form {
   max-width: 444px;
   margin-inline: auto;
 }
 
-.form__input {
+body.sign-in-page .form__input {
   display: block;
   width: 100%;
   padding: 15px 160px 15px 24px;
@@ -324,22 +370,22 @@ body {
   background-color: #faf8f6;
 }
 
-.form__input::-moz-placeholder {
+body.sign-in-page .form__input::-moz-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.form__input::placeholder {
+body.sign-in-page .form__input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.form__label {
+body.sign-in-page .form__label {
   margin-top: 15px;
   display: block;
   position: relative;
   margin-bottom: 21px;
 }
 
-.form__pass {
+body.sign-in-page .form__pass {
   position: absolute;
   right: 24px;
   top: 52%;
@@ -349,7 +395,7 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.form__btn {
+body.sign-in-page .form__btn {
   font-size: 20px;
   line-height: 24px;
   max-width: 270px;
@@ -361,16 +407,16 @@ body {
   border-radius: 100px;
 }
 
-.form__recovery-input {
+body.sign-in-page .form__recovery-input {
   margin-bottom: 20px;
 }
 
-.social-login {
+body.sign-in-page .social-login {
   display: flex;
   justify-content: space-between;
 }
 
-.social-login__btn {
+body.sign-in-page .social-login__btn {
   background-color: #FAF8F6;
   border: none;
   max-width: 206px;
@@ -382,26 +428,82 @@ body {
   border-radius: 12px;
 }
 
-.social-login__box {
+body.sign-in-page .social-login__box {
   width: 32px;
   height: 32px;
   margin-right: 40px;
 }
 
-.social-login__box--apple {
+body.sign-in-page .social-login__box--apple {
   margin-right: 46px;
 }
 
-.social-login__box--facebook {
+body.sign-in-page .social-login__box--facebook {
   margin-right: 31px;
 }
 
-.social-login__text {
+body.sign-in-page .social-login__text {
   font-size: 20px;
 }
 
 @media (max-width: 993px) {
   .container {
     padding: 0 20px 0 19px;
+  }
+
+  .header {
+    padding: 15px 20px 15px 24px;
+  }
+
+  .header .logo {
+    max-width: 33.6px;
+    transform: translateX(17px);
+  }
+
+  .header__user-nav {
+    gap: 0;
+  }
+
+  .header__user-link:first-child {
+    transform: translate(100%, -200%);
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    width: 24px;
+    height: 18px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .burger::before,
+  .burger::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+
+  .burger::before {
+    top: 0;
+  }
+
+  .burger::after {
+    bottom: 0;
+  }
+
+  .burger__btn {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }

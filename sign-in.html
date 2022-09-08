@@ -8,73 +8,94 @@
     <title>Sign-in</title>
   </head>
 <body class="sign-in-page">
-  <section class="sign-in">
-    <a class="logo sign-in__logo" href="index.html">
-      <img class="logo__img sign-in__logo-img" src="./img/icons/header-logo-icon.svg" alt="logo">
-    </a>
-    <div class="sign-in__inner">
-        <h4 class="sign-in__title">
-          Sign in with email
-        </h4>
-        <p class="sign-in__text">
-          Please enter your e-mail and password:
-        </p>
-        <form class="sign-in__form form" action="#">
-          <input class="form__input" type="email" required placeholder="Email">
-          <label class="form__label">
-            <input class="form__input" type="password" required placeholder="Password">
-            <a class="form__pass" href="#">Forgot password?</a>
-          </label>
-          <button class="form__btn" type="submit">Sign in</button>
-        </form>
-        <p class="sign-in__login-with">
-          or sign in with...
-        </p>
-        <div class="sign-in__social-login social-login">
-          <button class="social-login__btn" type="button">
-            <div class="social-login__box">
-              <img class="social-login__box-img" src="./img/icons/Login-icon_google.svg" alt="google">
-            </div>
-            <span class="social-login__text">
-              Google
-            </span>
-          </button>
-          <button class="social-login__btn" type="button">
-            <div class="social-login__box social-login__box--apple">
-              <img class="social-login__box-img" src="./img/icons/Login-icon_apple.svg" alt="google">
-            </div>
-            <span class="social-login__text">
-              Apple
-            </span>
-          </button>
-          <button class="social-login__btn" type="button">
-            <div class="social-login__box social-login__box--facebook">
-              <img class="social-login__box-img" src="./img/icons/Login-icon_facebook.svg" alt="google">
-            </div>
-            <span class="social-login__text">
-              Facebook
-            </span>
-          </button>
+  <header class="header">
+      <div class="header__inner">
+        <div class="header__burger burger">
+            <span class="burger__btn"></span>
         </div>
-    </div>
-    <div class="sign-in__inner sign-in__recovery-inner">
-      <p class="sign-in__recovery-title">
-        Recover password
-      </p>
-      <p class="sign-in__recovery-text">
-        Please enter your email:
-      </p>
-      <form class="form sign-in__form sign-in__recovery-form" action="#">
-        <input class="form__input form__recovery-input" type="email" required placeholder="Email">
-        <button class="form__btn" type="submit">Recover</button>
-      </form>
-    </div>
-    <p class="sign-in__create">
-      Don't have an account? <a class="sign-in__create-link" href="sign-up.html">
-        Create one
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="../img/icons/header-logo-icon.svg" alt="Logo">
+        </a>
+        <div class="header__user-nav">
+          <a class="header__user-link" href="#">
+            <img class="header__user" src="../img/icons/user-icon.svg" alt="user">
+          </a>
+          <a class="header__user-link" href="#">
+            <img class="header__cart" src="../img/icons/cart-icon.svg" alt="cart">
+          </a>
+          <a class="header__btn" href="quiz.html">Take the quiz</a>
+        </div>
+      </div>
+</header>;
+  <main>
+    <section class="sign-in">
+      <a class="logo sign-in__logo" href="index.html">
+        <img class="logo__img sign-in__logo-img" src="./img/icons/header-logo-icon.svg" alt="logo">
       </a>
-    </p>
-  </section>
+      <div class="sign-in__inner">
+          <h4 class="sign-in__title">
+            Sign in with email
+          </h4>
+          <p class="sign-in__text">
+            Please enter your e-mail and password:
+          </p>
+          <form class="sign-in__form form" action="#">
+            <input class="form__input" type="email" required placeholder="Email">
+            <label class="form__label">
+              <input class="form__input" type="password" required placeholder="Password">
+              <a class="form__pass" href="#">Forgot password?</a>
+            </label>
+            <button class="form__btn" type="submit">Sign in</button>
+          </form>
+          <p class="sign-in__login-with">
+            or sign in with...
+          </p>
+          <div class="sign-in__social-login social-login">
+            <button class="social-login__btn" type="button">
+              <div class="social-login__box">
+                <img class="social-login__box-img" src="./img/icons/Login-icon_google.svg" alt="google">
+              </div>
+              <span class="social-login__text">
+                Google
+              </span>
+            </button>
+            <button class="social-login__btn" type="button">
+              <div class="social-login__box social-login__box--apple">
+                <img class="social-login__box-img" src="./img/icons/Login-icon_apple.svg" alt="google">
+              </div>
+              <span class="social-login__text">
+                Apple
+              </span>
+            </button>
+            <button class="social-login__btn" type="button">
+              <div class="social-login__box social-login__box--facebook">
+                <img class="social-login__box-img" src="./img/icons/Login-icon_facebook.svg" alt="google">
+              </div>
+              <span class="social-login__text">
+                Facebook
+              </span>
+            </button>
+          </div>
+      </div>
+      <div class="sign-in__inner sign-in__recovery-inner">
+        <p class="sign-in__recovery-title">
+          Recover password
+        </p>
+        <p class="sign-in__recovery-text">
+          Please enter your email:
+        </p>
+        <form class="form sign-in__form sign-in__recovery-form" action="#">
+          <input class="form__input form__recovery-input" type="email" required placeholder="Email">
+          <button class="form__btn" type="submit">Recover</button>
+        </form>
+      </div>
+      <p class="sign-in__create">
+        Don't have an account? <a class="sign-in__create-link" href="sign-up.html">
+          Create one
+        </a>
+      </p>
+    </section>
+  </main>
   <script src="./js/app.min.js"></script>
 </body>
 </html>

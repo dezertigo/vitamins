@@ -343,6 +343,10 @@ body {
   display: flex;
 }
 
+.quiz__step .logo__img--mobile {
+  display: none;
+}
+
 .quiz__step--1::before,
 .quiz__step--9::before {
   top: 116px;
@@ -490,8 +494,134 @@ body {
   background: #FFCA78;
 }
 
+@media (max-width: 1100px) {
+  .quiz {
+    background: #faf8f6;
+  }
+
+  .quiz__step {
+    padding: 30px 20px;
+  }
+
+  .quiz__step::before,
+  .quiz__step::after {
+    display: none;
+  }
+
+  .quiz__content {
+    flex-direction: column;
+  }
+
+  .quiz__title {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+
+  .quiz__label span {
+    display: none;
+  }
+
+  .quiz__input {
+    height: 56px;
+  }
+
+  .quiz__btn-back {
+    font-size: 16px;
+    color: #000000;
+  }
+
+  .quiz__btn-back::before {
+    background: url(../img/quiz/Back_arrow--mobile.png) no-repeat;
+  }
+
+  .quiz__btn-next {
+    top: 27px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .quiz__questions--8 {
+    transform: translateX(0);
+    gap: 15px;
+  }
+
+  .quiz__questions--8 .quiz__link {
+    max-width: 160px;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quiz__link {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    min-height: 60px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .quiz__step .logo__img {
+    display: none;
+  }
+
+  .quiz__step .logo__img--mobile {
+    display: block;
+    max-width: 33.6px;
+    width: 100%;
+    height: 40px;
+  }
+
+  .quiz__step--2 .quiz__questions {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .quiz__step--2 .quiz__questions .quiz__link {
+    min-height: 104px;
+  }
+
+  .quiz__step--2 .quiz__questions .quiz__link:nth-of-type(2) {
+    margin-top: 0;
+  }
+
+  .quiz__step--7 .quiz__questions {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .quiz__step--7 .quiz__questions .quiz__link {
+    min-height: 104px;
+  }
+
+  .quiz__step--7 .quiz__questions .quiz__link:nth-of-type(2) {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 993px) {
   .container {
     padding: 0 20px 0 19px;
+  }
+}
+
+@media (max-width: 769px) {
+  .quiz__btn-back {
+    margin-top: 21px;
+  }
+}
+
+@media (max-width: 340px) {
+  .quiz__questions--8 .quiz__link {
+    max-width: 132px;
   }
 }
