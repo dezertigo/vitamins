@@ -36,16 +36,17 @@ a {
   color: inherit;
 }
 
-body.sign-in-page .form__btn,
+.form__btn,
 .header__btn {
   font-family: "Effra", sans-serif;
   font-weight: 700;
 }
 
-body.sign-in-page .social-login__text,
-body.sign-in-page .sign-in__recovery-title,
-body.sign-in-page .sign-in__login-with,
-body.sign-in-page .sign-in__title {
+.social-login__text,
+.sign-in__recovery-title,
+.sign-in__login-with,
+.sign-in__title,
+.acc-header__title {
   font-family: "Effra", sans-serif;
   font-weight: 500;
 }
@@ -56,7 +57,7 @@ body {
   font-weight: 400;
 }
 
-body.sign-in-page .form__btn,
+.form__btn,
 .header__btn {
   cursor: pointer;
   display: flex;
@@ -238,26 +239,37 @@ body {
   display: none;
 }
 
-body.sign-in-page .header {
+body.sign-in-page {
+  background-color: #FAF8F6;
+  min-height: 100vh;
+  min-width: 100vw;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.acc-header {
+  padding: 30px 0;
+  position: relative;
+}
+
+.acc-header__title {
   display: none;
 }
 
-body.sign-in-page .sign-in {
-  position: relative;
-  padding: 30px 0 40px;
-  background-color: #FAF8F6;
-}
-
-body.sign-in-page .sign-in__logo {
-  margin-bottom: 83px;
+.acc-header .sign-in__logo {
+  margin-bottom: 53px;
   display: block;
 }
 
-body.sign-in-page .sign-in__logo-img {
+.acc-header .sign-in__logo-img {
   margin: 0 auto;
 }
 
-body.sign-in-page .sign-in__inner {
+.sign-in {
+  position: relative;
+}
+
+.sign-in__inner {
   max-width: 920px;
   width: 100%;
   background-color: #fff;
@@ -265,65 +277,67 @@ body.sign-in-page .sign-in__inner {
   padding: 60px 120px;
 }
 
-body.sign-in-page .sign-in__inner.hide {
+.sign-in__inner.hide {
   opacity: 0;
   pointer-events: none;
 }
 
-body.sign-in-page .sign-in__title {
+.sign-in__title {
   text-align: center;
   font-size: 26px;
   line-height: 31px;
   margin-bottom: 8px;
 }
 
-body.sign-in-page .sign-in__text {
+.sign-in__text {
   text-align: center;
   line-height: 28px;
   margin-bottom: 23px;
 }
 
-body.sign-in-page .sign-in__form {
+.sign-in__form {
   margin-bottom: 40px;
 }
 
-body.sign-in-page .sign-in__login-with {
-  margin-bottom: 41px;
-  text-align: center;
+.sign-in__login-with {
   font-size: 20px;
   line-height: 24px;
+  max-width: 140px;
+  width: 100%;
+  margin: 0 auto 41px;
   position: relative;
 }
 
-body.sign-in-page .sign-in__login-with::before,
-body.sign-in-page .sign-in__login-with::after {
+.sign-in__login-with::before,
+.sign-in__login-with::after {
   content: "";
   position: absolute;
-  width: 240px;
+  max-width: 240px;
+  width: 100%;
   height: 1px;
   background-color: #f2f2f2;
   top: 14px;
   transform: translateY(-50%);
 }
 
-body.sign-in-page .sign-in__login-with::before {
-  left: 0;
+.sign-in__login-with::before {
+  left: -170px;
 }
 
-body.sign-in-page .sign-in__login-with::after {
-  right: 0;
+.sign-in__login-with::after {
+  right: -170px;
 }
 
-body.sign-in-page .sign-in__create {
+.sign-in__create {
   text-align: center;
   line-height: 22px;
 }
 
-body.sign-in-page .sign-in__create-link {
+.sign-in__create-link {
   color: #ff7d4e;
 }
 
-body.sign-in-page .sign-in__recovery-inner {
+.sign-in__recovery-inner {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -331,34 +345,34 @@ body.sign-in-page .sign-in__recovery-inner {
   display: none;
 }
 
-body.sign-in-page .sign-in__recovery-inner.active {
+.sign-in__recovery-inner.active {
   display: block;
 }
 
-body.sign-in-page .sign-in__recovery-title {
+.sign-in__recovery-title {
   font-size: 26px;
   line-height: 31px;
   text-align: center;
   margin-bottom: 10px;
 }
 
-body.sign-in-page .sign-in__recovery-text {
+.sign-in__recovery-text {
   font-size: 16px;
   line-height: 28px;
   text-align: center;
   margin-bottom: 20px;
 }
 
-body.sign-in-page .sign-in__recovery-form {
+.sign-in__recovery-form {
   margin-bottom: 0;
 }
 
-body.sign-in-page .form {
+.form {
   max-width: 444px;
   margin-inline: auto;
 }
 
-body.sign-in-page .form__input {
+.form__input {
   display: block;
   width: 100%;
   padding: 15px 160px 15px 24px;
@@ -370,22 +384,22 @@ body.sign-in-page .form__input {
   background-color: #faf8f6;
 }
 
-body.sign-in-page .form__input::-moz-placeholder {
+.form__input::-moz-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-body.sign-in-page .form__input::placeholder {
+.form__input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-body.sign-in-page .form__label {
+.form__label {
   margin-top: 15px;
   display: block;
   position: relative;
   margin-bottom: 21px;
 }
 
-body.sign-in-page .form__pass {
+.form__pass {
   position: absolute;
   right: 24px;
   top: 52%;
@@ -395,7 +409,7 @@ body.sign-in-page .form__pass {
   color: rgba(0, 0, 0, 0.5);
 }
 
-body.sign-in-page .form__btn {
+.form__btn {
   font-size: 20px;
   line-height: 24px;
   max-width: 270px;
@@ -407,16 +421,17 @@ body.sign-in-page .form__btn {
   border-radius: 100px;
 }
 
-body.sign-in-page .form__recovery-input {
+.form__recovery-input {
   margin-bottom: 20px;
 }
 
-body.sign-in-page .social-login {
+.social-login {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
-body.sign-in-page .social-login__btn {
+.social-login__btn {
   background-color: #FAF8F6;
   border: none;
   max-width: 206px;
@@ -428,22 +443,40 @@ body.sign-in-page .social-login__btn {
   border-radius: 12px;
 }
 
-body.sign-in-page .social-login__box {
+.social-login__box {
   width: 32px;
   height: 32px;
   margin-right: 40px;
 }
 
-body.sign-in-page .social-login__box--apple {
+.social-login__box--apple {
   margin-right: 46px;
 }
 
-body.sign-in-page .social-login__box--facebook {
+.social-login__box--facebook {
   margin-right: 31px;
 }
 
-body.sign-in-page .social-login__text {
+.social-login__text {
   font-size: 20px;
+}
+
+.acc-footer {
+  padding: 41px 0 42px;
+  position: relative;
+}
+
+.acc-footer::before {
+  content: "";
+  position: absolute;
+  max-width: 90%;
+  margin: 0 auto;
+  width: 100%;
+  height: 1px;
+  background-color: #f2f2f2;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (max-width: 993px) {
@@ -505,5 +538,132 @@ body.sign-in-page .social-login__text {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  body.sign-in-page {
+    background-color: #fff;
+  }
+
+  .acc-header {
+    padding: 23px 0 26px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  }
+
+  .acc-header__title {
+    display: block;
+    margin: 0 auto;
+    max-width: 74px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .acc-header__title::before {
+    position: absolute;
+    content: "";
+    left: 30px;
+    top: 28px;
+    background: url(../img/icons/back_arrow.svg);
+    width: 11px;
+    height: 21px;
+    cursor: pointer;
+  }
+
+  .acc-header .sign-in__logo {
+    display: none;
+  }
+
+  .sign-in__login-with::before,
+  .sign-in__login-with::after {
+    max-width: 170px;
+  }
+}
+
+@media (max-width: 992px) {
+  .sign-in__inner {
+    max-width: unset;
+    padding: 60px 120px;
+  }
+}
+
+@media (max-width: 769px) {
+  .sign-in {
+    padding: 0 20px;
+  }
+
+  .sign-in__inner {
+    padding: 50px 0;
+  }
+
+  .sign-in__title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 10px;
+  }
+
+  .sign-in__text {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 21px;
+  }
+
+  .sign-in__login-with {
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 111px;
+  }
+
+  .sign-in__login-with::before,
+  .sign-in__login-with::after {
+    max-width: 82px;
+    top: 10px;
+  }
+
+  .sign-in__login-with::before {
+    left: -110px;
+  }
+
+  .sign-in__login-with::after {
+    right: -110px;
+  }
+
+  .form__label {
+    margin-top: 10px;
+  }
+
+  .form__btn {
+    font-size: 16px;
+    line-height: 19px;
+    height: 56px;
+    max-width: 100%;
+  }
+
+  .social-login {
+    flex-direction: column;
+  }
+
+  .social-login__btn {
+    max-width: 410px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 0;
+    height: 56px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .social-login__box {
+    position: absolute;
+    left: 16px;
+  }
+
+  .social-login__text {
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+  .acc-footer .sign-in__create {
+    font-size: 14px;
+    line-height: 19px;
   }
 }

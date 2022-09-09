@@ -8,31 +8,18 @@
     <title>Sign-in</title>
   </head>
 <body class="sign-in-page">
-  <header class="header">
-      <div class="header__inner">
-        <div class="header__burger burger">
-            <span class="burger__btn"></span>
-        </div>
-        <a class="logo" href="index.html">
-          <img class="logo__img" src="../img/icons/header-logo-icon.svg" alt="Logo">
-        </a>
-        <div class="header__user-nav">
-          <a class="header__user-link" href="#">
-            <img class="header__user" src="../img/icons/user-icon.svg" alt="user">
-          </a>
-          <a class="header__user-link" href="#">
-            <img class="header__cart" src="../img/icons/cart-icon.svg" alt="cart">
-          </a>
-          <a class="header__btn" href="quiz.html">Take the quiz</a>
-        </div>
-      </div>
-</header>;
+  <header class="acc-header">
+    <p class="acc-header__title">
+      Account
+    </p>
+    <a class="logo sign-in__logo" href="index.html">
+      <img class="logo__img sign-in__logo-img" src="./img/icons/header-logo-icon.svg" alt="logo">
+    </a>
+  </header>
   <main>
     <section class="sign-in">
-      <a class="logo sign-in__logo" href="index.html">
-        <img class="logo__img sign-in__logo-img" src="./img/icons/header-logo-icon.svg" alt="logo">
-      </a>
-      <div class="sign-in__inner">
+      <div class="sign-in__content">
+        <div class="sign-in__inner">
           <h4 class="sign-in__title">
             Sign in with email
           </h4>
@@ -89,13 +76,16 @@
           <button class="form__btn" type="submit">Recover</button>
         </form>
       </div>
-      <p class="sign-in__create">
-        Don't have an account? <a class="sign-in__create-link" href="sign-up.html">
-          Create one
-        </a>
-      </p>
+      </div>
     </section>
   </main>
+  <footer class="acc-footer">
+    <p class="sign-in__create">
+      Don't have an account? <a class="sign-in__create-link" href="sign-up.html">
+        Create one
+      </a>
+    </p>
+  </footer>
   <script src="./js/app.min.js"></script>
 </body>
 </html>
