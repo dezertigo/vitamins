@@ -280,6 +280,7 @@ body.sign-in-page {
 .sign-in__inner.hide {
   opacity: 0;
   pointer-events: none;
+  display: none;
 }
 
 .sign-in__title {
@@ -573,16 +574,14 @@ body.sign-in-page {
     display: none;
   }
 
-  .sign-in__login-with::before,
-  .sign-in__login-with::after {
-    max-width: 170px;
-  }
-}
-
-@media (max-width: 992px) {
   .sign-in__inner {
     max-width: unset;
     padding: 60px 120px;
+  }
+
+  .sign-in__login-with::before,
+  .sign-in__login-with::after {
+    max-width: 170px;
   }
 }
 
@@ -665,5 +664,11 @@ body.sign-in-page {
   .acc-footer .sign-in__create {
     font-size: 14px;
     line-height: 19px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sign-in__recovery-inner {
+    padding: 0 20px;
   }
 }

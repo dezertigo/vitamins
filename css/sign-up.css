@@ -284,6 +284,7 @@ body.sign-in-page {
 .sign-in__inner.hide {
   opacity: 0;
   pointer-events: none;
+  display: none;
 }
 
 .sign-in__title {
@@ -719,6 +720,11 @@ body.sign-up-page .acc-header .sign-up__logo {
     display: none;
   }
 
+  .sign-in__inner {
+    max-width: unset;
+    padding: 60px 120px;
+  }
+
   .sign-in__login-with::before,
   .sign-in__login-with::after {
     max-width: 170px;
@@ -741,13 +747,6 @@ body.sign-up-page .acc-header .sign-up__logo {
   .sign-up__login-email::before,
   .sign-up__login-email::after {
     display: none;
-  }
-}
-
-@media (max-width: 992px) {
-  .sign-in__inner {
-    max-width: unset;
-    padding: 60px 120px;
   }
 }
 
@@ -869,6 +868,12 @@ body.sign-up-page .acc-header .sign-up__logo {
     line-height: 19px;
     max-width: 157px;
     height: 67px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sign-in__recovery-inner {
     padding: 0 20px;
   }
 }
