@@ -446,6 +446,11 @@ body.home-page .container {
   align-items: center;
   font-size: 20px;
   line-height: 33px;
+  transform: all 0.3s;
+}
+
+.hero__btn--quiz:hover {
+  background-color: #f27e58;
 }
 
 .hero__btn--transparent {
@@ -460,13 +465,23 @@ body.home-page .container {
 .hero__btn--transparent::after {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
-  background-image: url(../img/home/arrow-right.svg);
-  background-repeat: no-repeat;
-  right: -6px;
-  top: 52%;
-  transform: translateY(-50%);
+  width: 9px;
+  height: 9px;
+  border-top: 3px solid #f27e58;
+  border-right: 3px solid #f27e58;
+  right: 4px;
+  top: 51%;
+  transform: rotate(45deg) translateY(-50%);
+  transition: all 0.3s;
+}
+
+.hero__btn--transparent:hover {
+  color: #6e5ddc;
+}
+
+.hero__btn--transparent:hover::after {
+  border-top: 3px solid #6e5ddc;
+  border-right: 3px solid #6e5ddc;
 }
 
 .hero__graphic {
