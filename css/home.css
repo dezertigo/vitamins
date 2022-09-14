@@ -41,6 +41,8 @@ a {
   font-weight: 700;
 }
 
+.health__item-text,
+.health__title,
 .hero__btn--transparent,
 .hero__title {
   font-family: "Effra", sans-serif;
@@ -368,11 +370,6 @@ body.home-page .header {
   z-index: 10;
 }
 
-body.home-page .container {
-  padding: 0 3px;
-  max-width: 100%;
-}
-
 .hero {
   overflow: hidden;
   position: relative;
@@ -395,15 +392,25 @@ body.home-page .container {
   padding-top: 84px;
 }
 
-.hero__decor img:nth-of-type(1) {
+.hero__decor-img:first-child {
+  max-width: 23.94%;
+  width: 100%;
+}
+
+.hero__decor-img:first-child img {
   position: absolute;
   top: 0px;
   left: 550px;
 }
 
-.hero__decor img:nth-of-type(2) {
+.hero__decor-img:last-child {
+  max-width: 42.273%;
+  width: 100%;
+}
+
+.hero__decor-img:last-child img {
   position: absolute;
-  bottom: 35px;
+  bottom: 37px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -502,17 +509,17 @@ body.home-page .container {
 }
 
 .hero__circle--big {
-  width: 523px;
-  height: 523px;
+  width: 29%;
+  height: 54.6%;
   background-color: #8172dd;
   top: 218px;
-  right: 188px;
+  right: 10.5%;
 }
 
 .hero__img {
   position: relative;
-  padding-bottom: 70%;
-  transform: translate(-187px, -55px);
+  padding-bottom: 90%;
+  transform: translate(-183px, -51px);
 }
 
 .hero__img img {
@@ -523,7 +530,88 @@ body.home-page .container {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 142%;
+  max-width: 181%;
+}
+
+.health {
+  background-image: url(../img/home/bg-1.svg);
+  background-size: 900px 960px;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.health__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.health__intro {
+  flex: 0 0 50%;
+  position: relative;
+  padding: 356px 0 401px;
+}
+
+.health__intro::before {
+  content: "";
+  position: absolute;
+  width: 139px;
+  height: 139px;
+  border-radius: 100%;
+  background-color: #ffca78;
+  top: 65px;
+  left: -75px;
+}
+
+.health__title {
+  font-size: 56px;
+  line-height: 67px;
+  color: #fff;
+  max-width: 563px;
+  width: 100%;
+  transform: translate(2px, 1px);
+}
+
+.health__content {
+  flex: 0 0 50%;
+  padding: 217px 0 238px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 96px;
+}
+
+.health__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 61px;
+}
+
+.health__item:nth-of-type(1) .health__item-text {
+  transform: translate(-2px, -5px);
+}
+
+.health__item:nth-of-type(2) .health__item-img {
+  transform: translate(7px, 4px);
+}
+
+.health__item:nth-of-type(2) .health__item-text {
+  transform: translateX(-2px);
+}
+
+.health__item:nth-of-type(3) .health__item-img {
+  transform: translate(9px, 1px);
+}
+
+.health__item:nth-of-type(3) .health__item-text {
+  transform: translate(-2px, -3px);
+}
+
+.health__item-text {
+  font-size: 30px;
+  line-height: 36px;
+  max-width: 444px;
+  width: 100%;
 }
 
 @media (max-width: 993px) {
