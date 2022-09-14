@@ -614,6 +614,57 @@ body.home-page .header {
   width: 100%;
 }
 
+.pills {
+  position: relative;
+  margin-top: -15.3%;
+  min-height: 650px;
+}
+
+.pills__img {
+  width: 100%;
+}
+
+.pills__img:nth-of-type(1) {
+  position: absolute;
+  max-width: 29.444%;
+  z-index: 1;
+  top: 0;
+  left: 202px;
+  padding-bottom: 25%;
+}
+
+.pills__img:nth-of-type(2) {
+  position: absolute;
+  max-width: 44.5%;
+  padding-bottom: 26.2%;
+  top: 177px;
+  left: 37.7%;
+}
+
+.pills__img img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper .wrapper-bg {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.about {
+  padding: 150px 0;
+}
+
 @media (max-width: 993px) {
   .container {
     padding: 0 20px 0 19px;
