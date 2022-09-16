@@ -669,6 +669,10 @@ body.home-page .header {
   top: -95px;
 }
 
+.wrapper .wrapper-bg--mobile {
+  display: none;
+}
+
 .about {
   padding: 147px 0 150px;
   position: relative;
@@ -879,10 +883,16 @@ body.home-page .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.reviews__slider {
+  padding: 0 15px;
 }
 
 .reviews-card {
+  box-sizing: border-box;
   padding: 40px 34px 30px 31px;
   max-width: 444px;
   min-height: 360px;
@@ -1025,7 +1035,7 @@ body.home-page .header {
   }
 
   .about {
-    padding: 75px 0 75px;
+    padding: 75px 0;
   }
 }
 
@@ -1115,6 +1125,58 @@ body.home-page .header {
 }
 
 @media (max-width: 1150px) {
+  .hero__title {
+    font-size: 36px;
+    line-height: 47px;
+  }
+
+  .hero__btn--quiz {
+    max-width: 210px;
+    min-height: 60px;
+  }
+
+  .health__intro::before {
+    width: 95px;
+    height: 95px;
+  }
+
+  .health__title {
+    font-size: 36px;
+    line-height: 47px;
+  }
+
+  .health__content {
+    padding: 45px 15px 25px 31px;
+  }
+
+  .health__item-text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .pills {
+    min-height: 430px;
+  }
+
+  .pills__img:nth-of-type(2) {
+    top: 150px;
+  }
+
+  .about__decor {
+    max-width: 7%;
+    top: 250px;
+  }
+
+  .about__title {
+    font-size: 36px;
+    line-height: 47px;
+  }
+
+  .about__btn {
+    max-width: 210px;
+    min-height: 60px;
+  }
+
   .products {
     padding: 50px 0;
     background: linear-gradient(180deg, rgb(233, 148, 120) 60%, rgb(255, 255, 255) 60%);
@@ -1131,6 +1193,11 @@ body.home-page .header {
     max-width: 100%;
     padding-top: 0;
     text-align: center;
+  }
+
+  .products__content-title {
+    font-size: 36px;
+    line-height: 47px;
   }
 
   .products__content-text {
@@ -1158,8 +1225,40 @@ body.home-page .header {
     margin: 0 auto;
   }
 
+  .reviews__title {
+    text-align: center;
+    margin: 0 auto 32px;
+    font-size: 36px;
+    line-height: 47px;
+  }
+
+  .reviews__text {
+    text-align: center;
+    margin: 0 auto 40px;
+  }
+
   .reviews__img-box {
     display: none;
+  }
+
+  .get-started__decor-1 {
+    max-width: 15%;
+    left: 0;
+    top: 390px;
+  }
+
+  .get-started__title {
+    font-size: 36px;
+    line-height: 47px;
+  }
+
+  .get-started__text {
+    max-width: 550px;
+  }
+
+  .get-started__btn {
+    max-width: 210px;
+    min-height: 60px;
   }
 }
 
@@ -1253,6 +1352,171 @@ body.home-page .header {
 
   .footer__item--lh {
     margin-bottom: 22px;
+  }
+
+  .hero {
+    background: none;
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    opacity: 0.07;
+  }
+
+  .hero__inner {
+    flex-direction: column;
+  }
+
+  .hero__content {
+    padding-top: 40px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .hero__decor-img:first-child img {
+    top: 259px;
+    right: 0;
+    left: unset;
+    transform: rotate(180deg);
+  }
+
+  .hero__decor-img:last-child img {
+    left: 0;
+    bottom: 370px;
+  }
+
+  .hero__title {
+    margin-bottom: 15px;
+  }
+
+  .hero__text {
+    margin: 0 auto 20px;
+  }
+
+  .hero__btns {
+    margin: 0 auto;
+  }
+
+  .hero__btn--quiz {
+    max-width: 154px;
+    min-height: 50px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .hero__circle--small {
+    display: none;
+  }
+
+  .hero__circle--big {
+    display: none;
+  }
+
+  .hero__img {
+    transform: translate(0, 0);
+    padding-bottom: 43%;
+  }
+
+  .hero__img img {
+    max-width: 100%;
+    transform: translateY(-130px);
+  }
+
+  .health__intro {
+    max-width: 100%;
+    width: 100%;
+    padding: 100px 0;
+  }
+
+  .health__intro::before {
+    width: 90px;
+    height: 90px;
+    top: -45px;
+    left: unset;
+    right: 30px;
+  }
+
+  .health__title {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .health__content {
+    padding: 45px 0;
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+  }
+
+  .health__item {
+    gap: 25px;
+  }
+
+  .pills {
+    margin-top: 0;
+    min-height: 520px;
+  }
+
+  .pills__img:nth-of-type(1) {
+    left: 0;
+    max-width: 50%;
+  }
+
+  .pills__img:nth-of-type(2) {
+    left: unset;
+    right: 0;
+    max-width: 70%;
+  }
+
+  .about {
+    overflow: hidden;
+  }
+
+  .about__decor {
+    display: none;
+  }
+
+  .about__circle {
+    width: 90px;
+    height: 90px;
+    right: -45px;
+    top: 45px;
+  }
+
+  .products-card {
+    max-width: 335px;
+  }
+
+  .products-card__img {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 901px) {
+  .health__inner {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper .wrapper-bg {
+    display: none;
+  }
+
+  .wrapper .wrapper-bg--mobile {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 230px;
   }
 }
 
