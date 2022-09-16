@@ -980,6 +980,47 @@ body.home-page .header {
   margin-top: 19px;
 }
 
+@media (max-width: 1701px) {
+  .hero__circle--big {
+    height: 51.355%;
+    top: 285px;
+  }
+
+  .health {
+    background-size: 800px auto;
+  }
+
+  .health__intro {
+    padding: 260px 0 280px;
+  }
+
+  .health__content {
+    padding: 187px 0 188px;
+  }
+}
+
+@media (max-width: 1601px) {
+  .hero__img {
+    transform: translate(-50px, 70px);
+  }
+
+  .hero__img img {
+    max-width: 140%;
+  }
+}
+
+@media (max-width: 1441px) {
+  .hero__circle--big {
+    height: 43.5%;
+    top: 355px;
+    right: 6.5%;
+  }
+
+  .health {
+    background-size: 700px 950px;
+  }
+}
+
 @media (max-width: 993px) {
   .container {
     padding: 0 20px 0 19px;
