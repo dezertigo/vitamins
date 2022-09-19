@@ -180,6 +180,7 @@ body {
 }
 
 .quiz {
+  min-height: 100vh;
   background: linear-gradient(90deg, #8172dd 50%, #faf8f6 50%);
 }
 
@@ -189,7 +190,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   display: none;
-  min-height: 100vh;
+  min-height: 100%;
   position: relative;
 }
 
