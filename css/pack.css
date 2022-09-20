@@ -770,6 +770,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 64px;
+    max-width: 334px;
   }
 
   .pack__wrapper-title {

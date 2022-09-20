@@ -273,7 +273,7 @@ body.sign-in-page {
   max-width: 920px;
   width: 100%;
   background-color: #fff;
-  margin: 0 auto 84px;
+  margin: 0 auto 44px;
   padding: 60px 120px;
 }
 
@@ -379,7 +379,7 @@ body.sign-in-page {
   padding: 15px 160px 15px 24px;
   font-size: 18px;
   line-height: 25px;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 12px;
   background-color: #faf8f6;
@@ -591,7 +591,8 @@ body.sign-in-page {
   }
 
   .sign-in__inner {
-    padding: 50px 0;
+    padding: 47px 0 49px;
+    margin-bottom: 0;
   }
 
   .sign-in__title {

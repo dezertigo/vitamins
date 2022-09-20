@@ -277,7 +277,7 @@ body.sign-in-page {
   max-width: 920px;
   width: 100%;
   background-color: #fff;
-  margin: 0 auto 84px;
+  margin: 0 auto 44px;
   padding: 60px 120px;
 }
 
@@ -383,7 +383,7 @@ body.sign-in-page {
   padding: 15px 160px 15px 24px;
   font-size: 18px;
   line-height: 25px;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 12px;
   background-color: #faf8f6;
@@ -493,7 +493,7 @@ body.sign-up-page {
 }
 
 body.sign-up-page .acc-header {
-  padding-bottom: 23px;
+  padding-bottom: 30px;
 }
 
 body.sign-up-page .acc-header .sign-up__logo {
@@ -576,6 +576,7 @@ body.sign-up-page .acc-header .sign-up__logo {
 
 .sign-up__form-label.active {
   display: block;
+  margin-bottom: 10px;
 }
 
 .sign-up__form-file {
@@ -597,6 +598,10 @@ body.sign-up-page .acc-header .sign-up__logo {
   font-size: 12px;
   line-height: 16px;
   color: #fff;
+}
+
+.sign-up__form-permission {
+  display: none;
 }
 
 .sign-up__form-btn {
@@ -735,6 +740,10 @@ body.sign-up-page .acc-header .sign-up__logo {
     padding: 0 20px;
   }
 
+  body.sign-up-page .acc-header {
+    padding-bottom: 25px;
+  }
+
   body.sign-up-page .acc-header__title::before {
     left: 10px;
   }
@@ -756,7 +765,8 @@ body.sign-up-page .acc-header .sign-up__logo {
   }
 
   .sign-in__inner {
-    padding: 50px 0;
+    padding: 47px 0 49px;
+    margin-bottom: 0;
   }
 
   .sign-in__title {
@@ -846,7 +856,7 @@ body.sign-up-page .acc-header .sign-up__logo {
     line-height: 29px;
     max-width: 100%;
     text-align: center;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
   }
 
   .sign-up__login-email {
@@ -860,12 +870,12 @@ body.sign-up-page .acc-header .sign-up__logo {
   }
 
   .sign-up__form-btn {
-    margin-top: 22px;
+    margin-top: 21px;
   }
 
   .sign-up__btn {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 20px;
     max-width: 157px;
     height: 67px;
     padding: 0 20px;
@@ -875,5 +885,20 @@ body.sign-up-page .acc-header .sign-up__logo {
 @media (max-width: 500px) {
   .sign-in__recovery-inner {
     padding: 0 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .sign-up__btns {
+    gap: 0;
+  }
+
+  .sign-up__form-permission.active {
+    display: block;
+    max-width: 280px;
+    font-size: 13px;
+    line-height: 18px;
+    opacity: 0.3;
+    color: #000;
   }
 }

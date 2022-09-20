@@ -378,7 +378,7 @@ body {
 .card-item__price {
   font-size: 18px;
   line-height: 25px;
-  transform: translateX(-11px);
+  margin-right: 11px;
 }
 
 .card-item__delivery {
@@ -408,7 +408,7 @@ body {
   color: #d32d2c;
   background-color: transparent;
   border: 2px solid rgba(211, 45, 44, 0.2);
-  transform: translateX(-10px);
+  margin-right: 11px;
 }
 
 .card-item + .card-item {
@@ -844,6 +844,12 @@ body {
   background-image: url(../img/icons/instagram-icon.svg);
 }
 
+@media (max-width: 1400px) {
+  .profile {
+    padding: 50px 19px 59px;
+  }
+}
+
 @media (max-width: 993px) {
   .container {
     padding: 0 20px 0 19px;
@@ -905,6 +911,10 @@ body {
     transform: translateY(-50%);
   }
 
+  .menu {
+    display: none;
+  }
+
   .footer__title {
     margin-bottom: 2px;
   }
@@ -938,6 +948,14 @@ body {
 }
 
 @media (max-width: 769px) {
+  .card-item__top {
+    gap: 15px;
+  }
+
+  .card-item__delivery {
+    gap: 25px;
+  }
+
   .footer {
     padding: 42px 0;
   }
@@ -979,6 +997,89 @@ body {
 
   .footer__info--third .footer__title {
     margin-bottom: 9px;
+  }
+}
+
+@media (max-width: 550px) {
+  .card-item {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .card-item__box {
+    max-width: 100%;
+    justify-content: center;
+    height: 131px;
+  }
+
+  .card-item__desc {
+    margin-top: 0;
+  }
+
+  .card-item__top {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .card-item__price {
+    margin-right: 0;
+  }
+
+  .card-item__btn {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .profile__title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+
+  .card-item__category {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 6px;
+  }
+
+  .card-item__text {
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 205px;
+  }
+
+  .card-item__price {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .card-item__delivery {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-item__date {
+    align-self: flex-start;
+  }
+
+  .card-item__date-delivery {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .card-item__date-send {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .card-item__btn {
+    max-width: 100%;
+  }
+
+  .card-item + .card-item {
+    margin-top: 15px;
   }
 }
 

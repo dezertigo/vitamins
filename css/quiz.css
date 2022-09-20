@@ -648,12 +648,6 @@ body {
   }
 }
 
-@media (max-width: 600px) {
-  .quiz__step {
-    min-height: calc(100vh - 60px);
-  }
-}
-
 @media (max-width: 375px) {
   .quiz__questions--8 .quiz__link {
     max-width: 132px;
