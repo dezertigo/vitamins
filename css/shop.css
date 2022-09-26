@@ -581,6 +581,7 @@ body {
 
 .card__box {
   margin-bottom: 40px;
+  transform: translateY(-1px);
 }
 
 .card__body {
