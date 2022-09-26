@@ -632,7 +632,6 @@ body {
   max-width: 440px;
   width: 100%;
   margin-bottom: 50px;
-  transform: translateX(3px);
 }
 
 .reviews__inner {
@@ -916,7 +915,6 @@ body {
     line-height: 24px;
     max-width: 215px;
     width: 100%;
-    transform: translateX(0px);
     margin-bottom: 14px;
   }
 
