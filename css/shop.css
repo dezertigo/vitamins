@@ -360,6 +360,10 @@ body {
   background-image: url(../img/icons/instagram-icon.svg);
 }
 
+.slider {
+  transform: translateY(-10px);
+}
+
 .slider__wrapper {
   max-width: 1400px;
 }
@@ -390,7 +394,7 @@ body {
 .slider__decor-1 {
   position: absolute;
   bottom: 0;
-  left: 37%;
+  left: 34%;
 }
 
 .slider__decor-2 {
@@ -406,12 +410,12 @@ body {
   background: #ffca78;
   border-radius: 100%;
   top: -28px;
-  right: 40%;
+  right: 33.7%;
 }
 
 .slider__content {
   max-width: 660px;
-  padding-left: 90px;
+  padding-left: 71px;
 }
 
 .slider__suptext {
@@ -450,8 +454,8 @@ body {
 
 .slider__graphic {
   position: absolute;
-  top: -40px;
-  right: 0;
+  top: -28px;
+  right: 1px;
 }
 
 .slider__graphic--2 {
@@ -477,9 +481,9 @@ body {
   height: 70px;
   border-radius: 100%;
   background-color: #fff;
-  top: -250px;
+  top: -240px;
   transform: translate(-50%, -50%);
-  left: 11%;
+  left: 11.3%;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -501,20 +505,34 @@ body {
   background-color: #5F9DCA;
 }
 
+.slider__banner .slider__suptext {
+  transform: translateY(-2px);
+}
+
+.slider__banner .slider__text {
+  max-width: 460px;
+}
+
+.slider__banner .slider__graphic--3 {
+  top: 52%;
+  right: 37px;
+}
+
 .shop__inner {
   display: flex;
   justify-content: space-between;
-  padding-top: 60px;
+  padding-top: 51px;
   padding-bottom: 100px;
 }
 
 .shop__menu {
   max-width: 206px;
   margin-top: 30px;
+  margin-left: 1px;
 }
 
 .shop__item {
-  margin-bottom: 45px;
+  margin-bottom: 46px;
   font-size: 22px;
   line-height: 26px;
   cursor: pointer;
@@ -590,6 +608,7 @@ body {
   font-size: 20px;
   line-height: 27px;
   margin-top: auto;
+  transform: translateY(-3px);
 }
 
 .card__price--discount {
