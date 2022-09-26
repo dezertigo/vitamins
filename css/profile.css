@@ -420,9 +420,13 @@ body {
 }
 
 .order__inner {
-  padding: 41px 40px 44px 41px;
+  padding: 0px 40px 0px 41px;
   background: #FAF8F6;
   border-radius: 16px;
+}
+
+.order__inner.opened .order__icon {
+  transform: rotate(180deg) translate(4px, -2px);
 }
 
 .order__inner + .order__inner {
@@ -434,26 +438,39 @@ body {
   justify-content: space-between;
   font-size: 18px;
   line-height: 25px;
-  margin-bottom: 8px;
+  padding-top: 41px;
+  padding-bottom: 41px;
+  position: relative;
+}
+
+.order__wrapper {
+  transition: 0.5s;
 }
 
 .order__date {
   opacity: 0.5;
+  margin-bottom: 8px;
+}
+
+.order__date span {
+  display: none;
 }
 
 .order__num {
   font-size: 22px;
-  margin-bottom: 40px;
 }
 
-.order__wrapper {
+.order__icon {
+  display: none;
+}
+
+.order__cards {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
   padding-bottom: 46px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-  margin-bottom: 34px;
 }
 
 .order__item {
@@ -482,7 +499,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transform: translateY(7px);
+  padding-top: 41px;
+  padding-bottom: 37px;
 }
 
 .order__amount {
@@ -527,20 +545,31 @@ body {
 .account__type {
   font-size: 22px;
   display: none;
-  transform: translateY(14px);
+  cursor: pointer;
 }
 
 .account__type.active {
   display: block;
+  padding-top: 14px;
 }
 
 .account__form {
-  max-width: 923px;
+  max-width: 919px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 33px;
+  justify-content: space-between;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   row-gap: 32px;
+}
+
+.account__fieldset {
+  border: 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 443px;
+  width: 100%;
 }
 
 .account__label {
@@ -643,16 +672,29 @@ body {
 }
 
 .payments__form {
+  position: relative;
   max-width: 674px;
   width: 100%;
-  padding: 50px 40px 0;
+  padding: 46px 40px 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   -moz-column-gap: 60px;
        column-gap: 60px;
   justify-content: space-between;
   background: url(../img/profile/payment-img.png) no-repeat;
   background-position-x: 2px;
+}
+
+.payments__form-top {
+  max-width: 410px;
+  width: 100%;
+  border: none;
+}
+
+.payments__form-bottom {
+  border: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .payments__label {
@@ -678,20 +720,29 @@ body {
   margin-left: auto;
 }
 
+.payments__label--exp {
+  max-width: 104px !important;
+}
+
 .payments__label--cvc {
-  transform: translateY(40px);
+  max-width: 104px;
+  transform: translate(3px, 39px);
 }
 
 .payments__input {
   display: block;
-  padding: 15px 24px;
+  padding: 15px 26px;
   border-radius: 12px;
   background-color: #fff;
   border: none;
-  margin-top: 8px;
+  margin-top: 6px;
   max-width: 104px;
   font-size: 18px;
   line-height: 25px;
+}
+
+.payments__input--pass {
+  margin-bottom: 0 !important;
 }
 
 .payments__input::-moz-placeholder {
@@ -703,7 +754,7 @@ body {
 }
 
 .payments__btn {
-  margin-top: 129px;
+  margin-top: 98px;
   transform: translateX(-39px);
 }
 
@@ -850,6 +901,28 @@ body {
   }
 }
 
+@media (max-width: 1200px) {
+  .account__fieldset {
+    max-width: 350px;
+  }
+
+  .account__label {
+    max-width: 350px;
+  }
+
+  .account__label--state {
+    max-width: 150px;
+  }
+
+  .account__btn {
+    margin-right: 60%;
+  }
+
+  .payments__label--cvc {
+    max-width: 104px;
+  }
+}
+
 @media (max-width: 993px) {
   .container {
     padding: 0 20px 0 19px;
@@ -915,6 +988,49 @@ body {
     display: none;
   }
 
+  .order__top {
+    padding: 30px 0;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .order__wrapper {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .order__date span {
+    display: inline-block;
+    padding-left: 7px;
+  }
+
+  .order__status {
+    display: none;
+  }
+
+  .order__icon {
+    display: block;
+    transition: all 0.5s;
+    transform: rotate(0deg) translate(-4px, 0px);
+  }
+
+  .order__icon svg path {
+    fill: #000;
+    opacity: 0.5;
+  }
+
+  .payments__form {
+    margin-inline: auto;
+  }
+
+  .changepass__form {
+    margin-inline: auto;
+  }
+
+  .changepass__btn {
+    max-width: 100%;
+  }
+
   .footer__title {
     margin-bottom: 2px;
   }
@@ -954,6 +1070,50 @@ body {
 
   .card-item__delivery {
     gap: 25px;
+  }
+
+  .account__fieldset {
+    max-width: 280px;
+  }
+
+  .account__label {
+    max-width: 280px;
+  }
+
+  .account__label--state {
+    max-width: 120px;
+  }
+
+  .payments__form {
+    background-image: none;
+  }
+
+  .payments__form-bottom {
+    max-width: 410px;
+    width: 100%;
+    gap: 17px;
+  }
+
+  .payments__label--exp {
+    max-width: 100% !important;
+  }
+
+  .payments__label--cvc {
+    transform: translate(0, 0);
+    max-width: 100%;
+  }
+
+  .payments__input--pass {
+    max-width: 196.5px;
+  }
+
+  .payments__input {
+    background-color: #FAF8F6;
+  }
+
+  .payments__btn {
+    transform: translateX(0);
+    margin-top: 0;
   }
 
   .footer {
@@ -1000,6 +1160,44 @@ body {
   }
 }
 
+@media (max-width: 611px) {
+  .account__top {
+    flex-direction: column;
+  }
+
+  .account__type {
+    margin-bottom: 16px;
+  }
+
+  .account__type.active {
+    padding-bottom: 14px;
+  }
+
+  .account__fieldset {
+    max-width: 100%;
+    gap: 15px;
+  }
+
+  .account__label {
+    max-width: 100%;
+  }
+
+  .account__btn {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .payments__btn {
+    max-width: 410px;
+  }
+}
+
+@media (max-width: 610px) {
+  .account__title {
+    margin-bottom: 0px;
+  }
+}
+
 @media (max-width: 550px) {
   .card-item {
     flex-direction: column;
@@ -1028,6 +1226,110 @@ body {
 
   .card-item__btn {
     margin-right: 0;
+  }
+
+  .order__inner:last-child {
+    margin-bottom: 3px;
+  }
+
+  .order__inner {
+    padding: 0 20px;
+  }
+
+  .order__inner + .order__inner {
+    margin-top: 16px;
+  }
+
+  .order__date {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 5px;
+  }
+
+  .order__num {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .order__cards {
+    gap: 0px;
+    padding-bottom: 40px;
+  }
+
+  .order__item {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .order__box {
+    max-width: 100px;
+    width: 100%;
+    height: 120px;
+  }
+
+  .order__box img {
+    max-width: 100%;
+    height: 95px;
+    transform: translateY(1px);
+  }
+
+  .order__card-top {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    gap: 11px;
+  }
+
+  .order__category {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 2px;
+  }
+
+  .order__footer {
+    padding-top: 28px;
+    padding-bottom: 29px;
+  }
+
+  .order__amount {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .order__amount span {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 520px) {
+  .payments__form {
+    padding: 0px;
+  }
+
+  .payments__form-top {
+    margin-bottom: 25px;
+  }
+
+  .payments__form-bottom {
+    margin-bottom: 37px;
+  }
+
+  .payments__label:first-child .payments__input {
+    margin-bottom: unset;
+  }
+
+  .payments__label--exp {
+    max-width: 159px !important;
+  }
+
+  .payments__label--cvc {
+    max-width: 159px;
+  }
+
+  .payments__input--pass {
+    max-width: 100%;
   }
 }
 
@@ -1081,10 +1383,86 @@ body {
   .card-item + .card-item {
     margin-top: 15px;
   }
+
+  .order__text {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 0px;
+  }
+
+  .order__price {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .account__title {
+    margin-bottom: 5px;
+  }
+
+  .account__type {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .account__type.active {
+    padding: 5px 0;
+    margin-bottom: 25px;
+  }
+
+  .account__form {
+    row-gap: 27px;
+    transform: translateX(-3px);
+  }
+
+  .account__label--wholesale.active {
+    transform: translateX(5px);
+  }
+
+  .account__btn-file {
+    top: 34px;
+    left: unset;
+    right: 13px;
+  }
+
+  .payments__title {
+    margin-bottom: 25px;
+  }
+
+  .payments__form-top {
+    margin-bottom: 26px;
+  }
+
+  .payments__input {
+    margin-top: 4px;
+    padding: 15px 23px;
+  }
 }
 
 @media (max-width: 360px) {
   .footer__info {
     max-width: 132px;
+  }
+}
+
+@media (max-width: 350px) {
+  .order__item {
+    gap: 18px;
+  }
+
+  .order__footer {
+    padding-top: 27px;
+  }
+
+  .order__btn {
+    max-width: 120px;
+  }
+
+  .account__btn-file {
+    right: 10px;
+  }
+
+  .payments__label--cvc {
+    max-width: 131px;
   }
 }
