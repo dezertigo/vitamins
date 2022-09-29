@@ -1,0 +1,86 @@
+.header {
+    padding: 30px;
+    padding-left: 35px;
+    position: relative;
+    @media (max-width: 993px) {
+        padding: 15px 20px 15px 24px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        @media (max-width: 993px) {
+            max-width: 33.6px;
+            transform: translateX(17px);
+        }
+    }
+    &__user-nav {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        @media (max-width:993px) {
+            gap: 0;
+        }
+    }
+    &__user-link {
+        max-width: 32px;
+        max-height: 32px;
+        @media (max-width:993px) {
+            &:first-child {
+                transform: translate(100%, -200%)
+            }
+        }
+    }
+    &__btn {
+        @extend %btn;
+        @extend %effra-700;
+        font-size: 16px;
+        line-height: 19px;
+        background-color: $orangeMain;
+        width: 154px;
+        height: 50px;
+        border-radius: 100px;
+        &:hover {
+            background-color: #6E5DDC;
+        }
+        @media (max-width: 993px) {
+            display: none;
+        }
+    }
+}
+.burger {
+    display: none;
+    @media (max-width: 993px) {
+        display: block;
+        width: 24px;
+        height: 18px;
+        position: relative;
+        cursor: pointer;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: $black;
+        }
+        &::before {
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
+        }
+        &__btn {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $black;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+  

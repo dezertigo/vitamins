@@ -1,0 +1,210 @@
+@import 'sign-in';
+
+
+
+body.sign-up-page {
+    background-color: #FAF8F6;
+    min-height: 100vh;
+    min-width: 100vw;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 993px) {
+        background-color: #fff;
+        padding: 0 20px;
+    }
+    .acc-header {
+        padding-bottom: 30px;
+        @media (max-width: 993px) {
+            padding-bottom: 25px;
+        }
+        .sign-up {
+            &__logo {
+                margin-bottom: 0;
+            }
+        }
+        &__title {
+            @media (max-width: 993px) {
+                &::before {
+                    left: 10px;
+                }
+            }
+           
+        }
+    }
+}
+
+.sign-up {
+    position: relative;
+    padding: 0px;
+    background-color: #FAF8F6;
+    &__inner {
+        margin-bottom: 0px;
+        &.hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+        @media (max-width: 769px) {
+            padding-bottom: 39px;
+        }
+    }
+    &__btns {
+        border: 1px solid #e6e6e6;
+        border-radius: 16px;
+        padding: 12px;
+        display: flex;
+        gap: 12px;
+        margin-bottom: 60px;
+        @media (max-width:769px) {
+            max-width: 500px;
+            margin: 0 auto 40px;
+            padding: 9px;
+        }
+        @media (max-width: 400px) {
+            gap: 0;
+        }
+    }
+    &__login-with {
+        font-size: 26px;
+        line-height: 31px;
+        @extend %effra-500;
+        margin-bottom: 40px;
+        &::before,
+        &::after {
+            top: 16px
+        }
+        @media (max-width: 993px) {
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+        @media (max-width:769px) {
+            font-size: 24px;
+            line-height: 29px;
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+    }
+    &__social-login {
+        margin-bottom: 40px;
+    }
+    &__login-email {
+        text-align: center;
+        margin-bottom: 40px;
+        @extend %effra-500;
+        font-size: 20px;
+        position: relative;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 1px;
+            top: 50%;
+            background-color: #f2f2f2;
+        }
+        &::before {
+            left: 0;
+        }
+        &::after {
+            right: 0;
+        }
+        @media (max-width: 993px) {
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+        @media (max-width:769px) {
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 41px;
+        }
+    }
+    &__form-input + &__form-input {
+        margin-top: 15px;
+        @media (max-width:769px) {
+            margin-top: 11px;
+        }
+    }
+    &__form-label {
+        position: relative;
+        margin-top: 17px;
+        display: none;
+        &.active {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    &__form-file {
+        padding-right: 150px;
+    }
+    &__form-upload {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 12px;
+        max-width: 104px;
+        width: 100%;
+        height: 36px;
+        border: none;
+        background-color: $orangeMain;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        color: $white;
+    }
+    &__form-permission {
+        display: none;
+        @media (max-width: 400px) {
+            &.active {
+                display: block;
+                max-width: 280px;
+                font-size: 13px;
+                line-height: 18px;
+                opacity: 0.3;
+                color: $black;
+            }
+        }
+    }
+    &__form-btn {
+        margin-top: 23px;
+        max-width: 100%;
+        @media (max-width:769px) {
+            margin-top: 21px;
+        }
+    }
+    &__btn {
+        @extend %btn;
+        @extend %effra-500;
+        max-width: 323px;
+        width: 100%;
+        height: 65px;
+        border: none;
+        background-color: transparent;
+        color: $black;
+        border-radius: 12px;
+        font-size: 20px;
+        &.active {
+            background-color: $orangeMain;
+            color: $white;
+        }
+        @media (max-width:769px) {
+            font-size: 16px;
+            line-height: 20px;
+            max-width: 157px;
+            height: 67px;
+            padding: 0 20px;
+        }
+    }
+    &__wholesale-input {
+        font-size: 14px;
+        line-height: 19px;
+        padding-block: 18px;
+    }
+}
+
+  

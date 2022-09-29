@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/profile.min.css">
+    <title>Profile</title>
+  </head>
+  <body class="profile-page">
+  @@include('html/header.html', {})
+  <main class="main">
+    <section class="profile">
+      <div class="profile__wrapper">
+        <nav class="menu tabs">
+          <ul class="menu__list tabs__list">
+            <li class="menu__item">
+              <a class="menu__link tabs__link active" href="#" data-tab="#tab_1">
+                Subscriptions
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link tabs__link" href="#" data-tab="#tab_2">
+                Orders
+              </a>
+            </li>
+            <li class="menu__item active">
+              <a class="menu__link tabs__link" href="#" data-tab="#tab_3">
+                Account Overview
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link tabs__link" href="#" data-tab="#tab_4">
+                Payment methods
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link tabs__link" href="#" data-tab="#tab_5">
+                Change Password
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Sign out
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="subscruption profile__block tabs__item active" id="tab_1">
+          <p class="subscruption__title profile__title">
+            Subscriptions
+          </p>
+          <div class="card-item subscruption__item">
+            <div class="card-item__box card-item__box--minerals subscruption__box">
+              <img class="card-item__box-img subscruption__box-img" src="./img/profile/subs-1.png" alt="#">
+            </div>
+            <div class="card-item__content subscruption__content">
+              <div class="card-item__desc subscruption__desc">
+                <p class="card-item__category card-item__category--minerals subscruption__category">
+                  Minerals
+                </p>
+                <div class="card-item__top">
+                  <p class="card-item__text subscruption__text">
+                    2 х Standard Process Thymus PMG 90 Tablets
+                  </p>
+                  <p class="card-item__price subscruption__price">
+                    $84.00
+                  </p>
+                </div>
+              </div>
+              <div class="card-item__delivery subscruption__delivery">
+                <div class="card-item__date subscrupiton__date">
+                  <p class="card-item__date-delivery subscruption__date-delivery">
+                    Shipment every 60 days
+                  </p>
+                  <p class="card-item__date-send subscruption__date-send">
+                    Next delivery: 28th Apr 2020
+                  </p>
+                </div>
+                <button class="card-item__btn subscruption__btn">
+                  Unsubscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-item subscruption__item">
+            <div class="card-item__box card-item__box--prenatal subscruption__box">
+              <img class="card-item__box-img subscruption__box-img" src="./img/profile/subs-2.png" alt="#">
+            </div>
+            <div class="card-item__content subscruption__content">
+              <div class="card-item__desc subscruption__desc">
+                <p class="card-item__category card-item__category--prenatal subscruption__category">
+                  Prenatal Vitamins
+                </p>
+                <div class="card-item__top">
+                  <p class="card-item__text subscruption__text">
+                    1 x Ortho Molecular Products Adrene Vive Capsules
+                  </p>
+                  <p class="card-item__price subscruption__price">
+                    $31.26
+                  </p>
+                </div>
+              </div>
+              <div class="card-item__delivery subscruption__delivery">
+                <div class="card-item__date subscruption__date">
+                  <p class="card-item__date-delivery subscruption__date-delivery">
+                    Shipment every 30 days
+                  </p>
+                  <p class="card-item__date-send subscruption__date-send">
+                    Next delivery: 19th Apr 2020
+                  </p>
+                </div>
+                <button class="card-item__btn subscruption__btn">
+                  Unsubscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-item subscruption__item">
+            <div class="card-item__box card-item__box--dietary subscruption__box">
+              <img class="card-item__box-img subscruption__box-img" src="./img/profile/subs-3.png" alt="#">
+            </div>
+            <div class="card-item__content subscruption__content">
+              <div class="card-item__desc subscruption__desc">
+                <p class="card-item__category card-item__category--dietary subscruption__category">
+                  Vitamins & Dietary Supplements
+                </p>
+                <div class="card-item__top">
+                  <p class="card-item__text subscruption__text">
+                    3 x Metagenics - 500-C Methoxyflavone
+                  </p>
+                  <p class="card-item__price subscruption__price">
+                    $32.45
+                  </p>
+                </div>
+              </div>
+              <div class="card-item__delivery subscruption__delivery">
+                <div class="card-item__date subscruption__date">
+                  <p class="card-item__date-delivery subscruption__date-delivery">
+                    Shipment every 40 days
+                  </p>
+                  <p class="card-item__date-send subscruption__date-send">
+                    Next delivery: 15th Apr 2020
+                  </p>
+                </div>
+                <button class="card-item__btn subscruption__btn">
+                  Unsubscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order profile__block tabs__item" id="tab_2">
+          <p class="profile__title">
+            Orders
+          </p>
+          <div class="order__inner">
+            <div class="order__top">
+              <div class="order__left">
+                <p class="order__date">
+                  18 May 2020 <span>&bull; Shipping</span>
+                </p>
+                <p class="order__num">
+                  No 67824-6786
+                </p>
+              </div>
+              <div class="order__right">
+                <p class="order__status">
+                  Shipping
+                </p>
+                <div class="order__icon">
+                  <svg width="15" height="9" viewBox="0 0 15 9" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M14.8788 1.46376L13.4339 3.6646e-07L7.43942 6.07249L1.44495 -6.31608e-08L-3.2942e-07 1.46376L7.43942 9L14.8788 1.46376Z"
+                      fill="white" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="order__wrapper">
+              <div class="order__body">
+                <div class="order__cards">
+                  <div class="card-item order__item">
+                    <div class="card-item__box card-item__box--minerals order__box">
+                      <img class="card-item__box-img order__box-img" src="./img/profile/subs-1.png" alt="#">
+                    </div>
+                    <div class="card-item__content order__content">
+                      <div class="card-item__desc order__desc">
+                        <p class="card-item__category card-item__category--minerals order__category">
+                          Minerals
+                        </p>
+                        <div class="card-item__top order__card-top">
+                          <p class="card-item__text order__text">
+                            2 х Standard Process Thymus PMG 90 Tablets
+                          </p>
+                          <p class="card-item__price order__price">
+                            $84.00
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item order__item">
+                    <div class="card-item__box card-item__box--prenatal order__box">
+                      <img class="card-item__box-img order__box-img" src="./img/profile/subs-2.png" alt="#">
+                    </div>
+                    <div class="card-item__content order__content">
+                      <div class="card-item__desc order__desc">
+                        <p class="card-item__category card-item__category--prenatal order__category">
+                          Prenatal Vitamins
+                        </p>
+                        <div class="card-item__top order__card-top">
+                          <p class="card-item__text order__text">
+                            1 x Ortho Molecular Products Adrene Vive Capsules
+                          </p>
+                          <p class="card-item__price order__price">
+                            $84.00
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item order__item">
+                    <div class="card-item__box card-item__box--dietary order__box">
+                      <img class="card-item__box-img order__box-img" src="./img/profile/subs-3.png" alt="#">
+                    </div>
+                    <div class="card-item__content order__content">
+                      <div class="card-item__desc order__desc">
+                        <p class="card-item__category card-item__category--dietary order__category">
+                          Vitamins & Dietary Supplements
+                        </p>
+                        <div class="card-item__top order__card-top">
+                          <p class="card-item__text order__text">
+                            2 х Standard Process Thymus PMG 90 Tablets
+                          </p>
+                          <p class="card-item__price order__price">
+                            $84.00
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="order__footer">
+                  <p class="order__amount">
+                    Order amount: <span>$180.90</span>
+                  </p>
+                  <a class="order__btn" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order__inner">
+            <div class="order__top">
+              <div class="order__left">
+                <p class="order__date">
+                  18 May 2020 <span>&bull; Shipping</span>
+                </p>
+                <p class="order__num">
+                  No 67824-6786
+                </p>
+              </div>
+              <div class="order__right">
+                <p class="order__status">
+                  Shipping
+                </p>
+                <div class="order__icon">
+                  <svg width="15" height="9" viewBox="0 0 15 9" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M14.8788 1.46376L13.4339 3.6646e-07L7.43942 6.07249L1.44495 -6.31608e-08L-3.2942e-07 1.46376L7.43942 9L14.8788 1.46376Z"
+                      fill="white" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="order__wrapper">
+              <div class="order__body">
+                <div class="order__cards">
+                  <div class="card-item order__item">
+                    <div class="card-item__box card-item__box--minerals order__box">
+                      <img class="card-item__box-img order__box-img" src="./img/profile/subs-1.png" alt="#">
+                    </div>
+                    <div class="card-item__content order__content">
+                      <div class="card-item__desc order__desc">
+                        <p class="card-item__category card-item__category--minerals order__category">
+                          Minerals
+                        </p>
+                        <div class="card-item__top order__card-top">
+                          <p class="card-item__text order__text">
+                            2 х Standard Process Thymus PMG 90 Tablets
+                          </p>
+                          <p class="card-item__price order__price">
+                            $84.00
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item order__item">
+                    <div class="card-item__box card-item__box--prenatal order__box">
+                      <img class="card-item__box-img order__box-img" src="./img/profile/subs-2.png" alt="#">
+                    </div>
+                    <div class="card-item__content order__content">
+                      <div class="card-item__desc order__desc">
+                        <p class="card-item__category card-item__category--prenatal order__category">
+                          Prenatal Vitamins
+                        </p>
+                        <div class="card-item__top order__card-top">
+                          <p class="card-item__text order__text">
+                            1 x Ortho Molecular Products Adrene Vive Capsules
+                          </p>
+                          <p class="card-item__price order__price">
+                            $84.00
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="order__footer">
+                  <p class="order__amount">
+                    Order amount: <span>$180.90</span>
+                  </p>
+                  <a class="order__btn" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order__inner">
+            <div class="order__top">
+              <div class="order__left">
+                <p class="order__date">
+                  18 May 2020 <span>&bull; Shipping</span>
+                </p>
+                <p class="order__num">
+                  No 67824-6786
+                </p>
+              </div>
+              <div class="order__right">
+                <p class="order__status">
+                  Shipping
+                </p>
+                <div class="order__icon">
+                  <svg width="15" height="9" viewBox="0 0 15 9" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M14.8788 1.46376L13.4339 3.6646e-07L7.43942 6.07249L1.44495 -6.31608e-08L-3.2942e-07 1.46376L7.43942 9L14.8788 1.46376Z"
+                      fill="white" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="order__wrapper">
+              <div class="order__body">
+                <div class="order__cards">
+                  <div class="card-item order__item">
+                    <div class="card-item__box card-item__box--minerals order__box">
+                      <img class="card-item__box-img order__box-img" src="./img/profile/subs-1.png" alt="#">
+                    </div>
+                    <div class="card-item__content order__content">
+                      <div class="card-item__desc order__desc">
+                        <p class="card-item__category card-item__category--minerals order__category">
+                          Minerals
+                        </p>
+                        <div class="card-item__top order__card-top">
+                          <p class="card-item__text order__text">
+                            2 х Standard Process Thymus PMG 90 Tablets
+                          </p>
+                          <p class="card-item__price order__price">
+                            $84.00
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item order__item">
+                    <div class="card-item__box card-item__box--prenatal order__box">
+                      <img class="card-item__box-img order__box-img" src="./img/profile/subs-2.png" alt="#">
+                    </div>
+                    <div class="card-item__content order__content">
+                      <div class="card-item__desc order__desc">
+                        <p class="card-item__category card-item__category--prenatal order__category">
+                          Prenatal Vitamins
+                        </p>
+                        <div class="card-item__top order__card-top">
+                          <p class="card-item__text order__text">
+                            1 x Ortho Molecular Products Adrene Vive Capsules
+                          </p>
+                          <p class="card-item__price order__price">
+                            $84.00
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="order__footer">
+                  <p class="order__amount">
+                    Order amount: <span>$180.90</span>
+                  </p>
+                  <a class="order__btn" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="account profile__block tabs__item" id="tab_3">
+          <div class="account__top">
+            <p class="profile__title account__title">
+              Account Overview
+            </p>
+            <p class="account__type active">
+              Regular customer
+            </p>
+            <p class="account__type">
+              Wholesale customer
+            </p>
+          </div>
+          <form class="account__form" action="#">
+            <label class="account__label">First Name
+              <input class="account__input" type="text" placeholder="John">
+            </label>
+            <label class="account__label">Last Name
+              <input class="account__input" type="text" placeholder="Smith">
+            </label>
+            <label class="account__label">Address Line 1
+              <input class="account__input" type="text" placeholder="Hilton st. 123">
+            </label>
+            <label class="account__label">Address Line 2
+              <input class="account__input" type="text">
+            </label>
+            <label class="account__label">City
+              <input class="account__input" type="text" placeholder="New York">
+            </label>
+            <fieldset class="account__fieldset">
+              <label class="account__label account__label--state account__label--select">State / Province
+                <input class="account__input account__select" type="text" placeholder="NY" disabled>
+              </label>
+              <label class="account__label account__label--state">ZIP / Postal Code
+                <input class="account__input" type="number" placeholder="213 822">
+              </label>
+            </fieldset>
+            <label class="account__label">Email
+              <input class="account__input" type="email" placeholder="johnsmith@gmail.com">
+            </label>
+            <label class="account__label">Phone Number
+              <input class="account__input" type="phone" placeholder="8 029 876 56 21">
+            </label>
+            <label class="account__label account__label--wholesale">Wholesale purchase permission
+              <input class="account__input" type="text" placeholder="123qwer.pdf">
+              <a class="account__btn-file" href="#">Update</a>
+            </label>
+            <button class="account__btn">Save</button>
+          </form>
+        </div>
+        <div class="payments profile__block tabs__item" id="tab_4">
+          <p class="profile__title payments__title">
+            Payment methods
+          </p>
+          <form class="payments__form" action="#">
+            <fieldset class="payments__form-top">
+              <label class="payments__label account__label"> Card Number
+                <input class="payments__input" type="text" placeholder="6477 1693 3042 6031">
+              </label>
+            </fieldset>
+            <fieldset class="payments__form-bottom">
+              <label class="payments__label account__label payments__label--exp"> Expiration
+                <input class="payments__input" type="text" placeholder="12/21">
+              </label>
+              <label class="payments__label account__label payments__label--cvc"> CVC
+                <input class="payments__input payments__input--pass" type="password" placeholder="&bull;&bull;&bull;">
+              </label>
+            </fieldset>
+            <button class="payments__btn account__btn">Save</button>
+          </form>
+          <!-- <form class="payments__form" action="#">
+            <label class="payments__label account__label"> Card Number
+              <input class="payments__input" type="text" placeholder="6477 1693 3042 6031">
+            </label>
+            <label class="payments__label account__label"> Expiration
+              <input class="payments__input" type="text" placeholder="12/21">
+            </label>
+            <label class="payments__label account__label payments__label--cvc"> CVC
+              <input class="payments__input" type="password" placeholder="&bull;&bull;&bull;">
+            </label>
+            <button class="payments__btn account__btn">Save</button>
+          </form> -->
+        </div>
+        <div class="changepass profile__block tabs__item" id="tab_5">
+          <p class="profile__title changepass__title">
+            Change Password
+          </p>
+          <form class="changepass__form">
+            <label class="changepass__label account__label">Current Password
+              <input class="changepass__input account__input" type="password">
+            </label>
+            <label class="changepass__label account__label">New Password
+              <input class="changepass__input account__input" type="password">
+            </label>
+            <label class="changepass__label account__label">Confirm New Password
+              <input class="changepass__input account__input" type="password">
+            </label>
+            <button class="changepass__btn account__btn">Save</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/footer.html', {})
+  <script src="./js/app.min.js"></script>
+</body>
+</html>

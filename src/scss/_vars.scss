@@ -1,0 +1,102 @@
+$white : #fff;
+$black: #000;
+$dark: #343434;
+$orangeMain: #ff7d4e;
+$redMain: #d32d2c;
+$purple: #9C91E0;
+$purpleText: #6B5EBB;
+$mint: #94D6BE;
+$mintText: #6BB0A4;
+$pink: #DA91E0;
+$pinkText: #9448A0;
+$blue: #91CAF2;
+$blueText: #5F9DCA;
+$orange: #F2B385;
+$orangeText: #E29964;
+$green: #A5B3FF;
+$greenText: #5E73BB;
+$red: #E8939D;
+$redText: #E6463B;
+
+%avenir-700 {
+    font-family: 'AvenirNextCyr', sans-serif;
+    font-weight: 700;
+}
+
+%avenir-600 { 
+    font-family: 'AvenirNext', sans-serif;
+    font-weight: 600;
+}
+
+%avenir-800 {
+    font-family: 'AvenirNextCyr', sans-serif;
+    font-weight: 800;
+}
+
+%avenir-500 {
+    font-family: 'AvenirNextCyr', sans-serif;
+    font-weight: 500;
+}
+
+%avenir-400 {
+    font-family: 'AvenirNextCyr', sans-serif;
+    font-weight: 400;
+}
+
+%montserrat-600 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+%montserrat-700 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+%effra-700 {
+    font-family: 'Effra', sans-serif;
+    font-weight: 700;
+}
+
+%effra-500 {
+    font-family: 'Effra', sans-serif;
+    font-weight: 500;
+}
+
+%effra-400 {
+    font-family: 'Effra', sans-serif;
+    font-weight: 400;
+}
+
+%os-700 {
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 700;
+}
+
+%os-600 {
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 600;
+}
+
+%os-400 {
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 400;
+}
+
+%btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    transition: all .3s;
+}
+
+%checkbox-hidden,
+%radio-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
