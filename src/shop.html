@@ -9,7 +9,9 @@
     <title>Catalog</title>
   </head>
 <body class="shop-page">
-  @@include('html/header.html', {})
+  @@include('html/header.html', {
+    'img': './img/icons/header-logo-icon.svg'
+  })
   <main class="main">
     <div class="slider swiper">
       <div class="slider__wrapper swiper-wrapper">
@@ -524,6 +526,7 @@
         <div class="slider__graphic slider__graphic--3">
           <img class="slider__graphic-img" src="./img/shop/slide-3.png" alt="">
           <img class="slider__graphic-img slider__graphic-img--3" src="./img/shop/slide-3-375.png" alt="pills">
+          <img class="slider__graphic-img slider__graphic-img--320" src="./img/shop/slide-3-320.png" alt="pills" >
         </div>
       </div> 
     </div>
