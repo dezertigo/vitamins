@@ -378,6 +378,22 @@ body.product-page {
     justify-content: space-between;
     align-items: center;
   }
+  &__discount {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 22px;
+    :first-child {
+      text-decoration:line-through;
+    }
+    @media (max-width: 601px) {
+      font-size: 12px;
+      line-height: 16px;
+      gap: 14px;
+      
+    }
+  }
   &__add-price {
     font-weight: 600;
     font-size: 30px;
@@ -385,6 +401,31 @@ body.product-page {
     @media (max-width: 601px) {
       font-size: 20px;
       line-height: 24px;
+    }
+  }
+  &__add-discount {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+    color: #fff;
+    padding: 4px 6px;
+    background-color: $redMain;
+    border-radius: 4px;
+    text-decoration: none;
+    @media (max-width: 601px) {
+      font-size: 10px;
+      line-height: 14px;
+      text-decoration: none;
+    }
+  }
+  &__add-newprice {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: $redMain;
+    @media (max-width: 601px) {
+      font-size: 20px;
+      line-height: 27px;
     }
   }
   &__add-btn {

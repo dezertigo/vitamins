@@ -214,9 +214,11 @@
         height: 65px;
         background-color: #fff;
         border-radius: 100px;
+        transform: translateX(2px);
         @media (max-width: 993px) {
             margin: 0 auto;
             height: 50px;
+            transform: translateX(0px);
         }
         @media (max-width: 400px) {
             max-width: 154px;
