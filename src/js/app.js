@@ -226,3 +226,24 @@ if (document.querySelector('body.quiz-page')) {
     });
 }
 
+if (document.querySelector('body.checkout-page')) {
+
+    const accord = document.querySelector(".checkout__cart");
+    if (accord) {
+        const body =  document.querySelector('body');
+        body.addEventListener("click", toggleSpoiler);
+        function toggleSpoiler(e) {
+           if (e.target.closest(".checkout__preview")) {
+              e.target.closest(".checkout__cart").classList.toggle("opened");
+              let accordionWrapper = e.target.closest(".checkout__preview").nextElementSibling;
+              if (!e.target.closest(".checkout__cart").classList.contains("opened")) {
+                accordionWrapper.style.height = null;
+              } else {
+                accordionWrapper.style.height = accordionWrapper.scrollHeight + "px";
+              }
+           }
+        }
+    }
+
+}
+
