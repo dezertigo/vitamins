@@ -9,21 +9,19 @@
   background-color: #fff;
   transform: translateX(100%);
   transition: all 0.5s ease;
-
   display: flex;
   flex-direction: column;
   &.active {
     transform: translateX(0);
   }
-  &.empty {
-
-  }
   &__wrapper {
+    pointer-events: none;
     position: fixed;
     width: 100vw;
     height: 100vh;
     top: 0;
     right: 0;
+    transition: all 0.5s ease;
     z-index: 100;
     &::before {
       content: "";
@@ -31,14 +29,18 @@
       top: 0;
       width: 100vw;
       height: 100vh;
-      opacity: .3;
-      backdrop-filter: blur(3px);
+      opacity: 0;
+      backdrop-filter: blur(5px);
       z-index: -1;
-      transition: opacity;
       background-color: #000;
+      transition: all .5s ease;
     }
     &.active {
       pointer-events: all;
+      right: 0;
+      &::before {
+        opacity: 0.3;
+      }
     }
   }
   &__header {
@@ -53,11 +55,12 @@
     font-size: 26px;
     line-height: 31px;
   }
-  &__img {
-
+  &__close {
+    cursor: pointer;
   }
   &__body {
     overflow: auto;
+    flex-grow: 1;
     &.empty {
       overflow: unset;
       * {
@@ -101,17 +104,17 @@
     line-height: 24px;
 
     span {
-      padding-left: 40px;
+      padding-left: 38px;
       position: relative;
       &::before {
         content: '';
         position: absolute;
-        width: 10px;
-        height: 10px;
+        width: 6px;
+        height: 6px;
         border-radius: 100%;
         background-color: #fff;
         top: 50%;
-        left: 15px;
+        left: 13px;
         transform: translateY(-50%);
       }
     }
@@ -121,6 +124,7 @@
     display: flex;
     gap: 25px;
     justify-content: space-between;
+    margin-bottom: 4px;
     &__graphic {
       display: flex;
       align-items: center;
@@ -128,6 +132,8 @@
       border-radius: 8px;
       max-width: 120px;
       width: 100%;
+      min-height: 170px;
+      height: 100%;
       background-color: $pink;
     }
     &__content {
@@ -135,7 +141,9 @@
     }
     &__content-box {
       display: flex;
-      margin-bottom: 15px;
+      margin-bottom: 18px;
+      margin-top: 7px;
+      gap: 20px;
     }
     &__title {
       @extend %effra-400;
@@ -143,8 +151,9 @@
       line-height: 24px;
     }
     &__close {
-      width: 15px;
-      height: 15px;
+      width: 14px;
+      height: 14px;
+      margin: 6px 10px;
       flex-shrink: 0;
       opacity: 0.5;
       cursor: pointer;
@@ -154,7 +163,7 @@
       justify-content: space-between;
       align-items: center;
       padding-bottom: 15px;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
       border-bottom: 1px solid #f2f2f2;
     }
     &__counter {
@@ -279,8 +288,8 @@
       color: #000;
       font-size: 12px;
       line-height: 16px;
-      padding: 6px 12px;
-      margin: 0 5px;
+      padding: 6px 8px 6px 7px;
+      margin: 0 19px 0 12px;
     }
   }
 }

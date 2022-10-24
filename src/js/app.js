@@ -21,7 +21,7 @@ if (document.querySelector('body.home-page')) {
             }
         }
     })
-        
+
     
     new Swiper('.reviews__slider', {
         breakpoints: {
@@ -57,7 +57,6 @@ if (document.querySelector('.shop-page')) {
             prevEl: '.slider__button-prev',
         },
     })
-    // document.querySelector('.slider__button-next').click();
 
     const shopList = document.querySelectorAll('.shop__item');
     shopList.forEach(item => (item.addEventListener('click', () => {
@@ -249,3 +248,24 @@ if (document.querySelector('body.checkout-page')) {
 
 }
 
+if (document.querySelector('header.header')) {
+    const cart = document.querySelector('.header__user-link--card');
+    const cartBlock = document.querySelector('.cart');
+    const cartWrap = document.querySelector('.cart__wrapper');
+    const cartClose = document.querySelector('.cart__close');
+
+    cart.addEventListener('click', () => {
+        cartWrap.classList.add('active');
+        cartBlock.classList.add('active');
+        
+    })
+    cartClose.addEventListener('click', () => {
+        cartWrap.classList.remove('active');
+        cartBlock.classList.remove('active');
+    })
+    window.addEventListener('click', e => {
+        if (e.target.closest('.cart-item')) {
+            e.target.closest('.cart-item').remove();
+        }
+    })
+}
