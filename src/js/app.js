@@ -50,12 +50,14 @@ if (document.querySelector('.shop-page')) {
         slidesPerView: 'auto',
         centeredSlides: true,
         spaceBetween: 50,
+        initialSlide: 1,
+        loop: true,
         navigation: {
             nextEl: '.slider__button-next',
             prevEl: '.slider__button-prev',
         },
     })
-    document.querySelector('.slider__button-next').click();
+    // document.querySelector('.slider__button-next').click();
 
     const shopList = document.querySelectorAll('.shop__item');
     shopList.forEach(item => (item.addEventListener('click', () => {
