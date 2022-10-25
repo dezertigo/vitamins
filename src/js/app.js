@@ -264,8 +264,24 @@ if (document.querySelector('header.header')) {
         cartBlock.classList.remove('active');
     })
     window.addEventListener('click', e => {
-        if (e.target.closest('.cart-item')) {
-            e.target.closest('.cart-item').remove();
+        if (e.target.classList.contains('cart-item__close-icon')) {
+            e.target.parentNode.parentNode.parentNode.parentNode.remove();
+            toggleCartStatus();
         }
     })
+}
+
+
+function toggleCartStatus() {
+    const cartItems = document.querySelector('.cart__items');
+    const cartEmpty = document.querySelector('.cart__empty');
+    const cartOrder = document.querySelector('.cart__order')
+
+    if (cartItems.children.length > 0) {
+        cartEmpty.classList.remove('empty');
+        cartOrder.classList.remove('empty');
+    } else {
+        cartEmpty.classList.add('empty');
+        cartOrder.classList.add('empty')
+    }
 }

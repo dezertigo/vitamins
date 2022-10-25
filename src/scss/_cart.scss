@@ -61,18 +61,15 @@
   &__body {
     overflow: auto;
     flex-grow: 1;
-    &.empty {
-      overflow: unset;
-      * {
-        display: none;
-      }
-      .cart__empty {
-        display: flex;
-      }
-      ~.cart__order {
-        display: none;
-      }
-    }
+    // &.empty {
+    //   overflow: unset;
+    //   * {
+    //     display: none;
+    //   }
+    //   ~.cart__order {
+    //     display: none;
+    //   }
+    // }
   }
   &__empty {
     display: none;
@@ -83,9 +80,15 @@
     align-items: center;
     justify-content: center;
     height: calc(100vh - 107px);
+    &.empty {
+      display: flex;
+    }
   }
   &__order {
     padding: 30px;
+    &.empty {
+      display: none;
+    }
   }
   &__btn {
     display: flex;
@@ -135,6 +138,9 @@
       min-height: 170px;
       height: 100%;
       background-color: $pink;
+      &--bg {
+        background-color: $purple;
+      }
     }
     &__content {
       
