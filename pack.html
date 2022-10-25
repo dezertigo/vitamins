@@ -4,17 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/home.min.css">
-    <title>PAGE</title>
+    <link rel="stylesheet" href="./css/pack.min.css">
+    <title>Personal Pack</title>
   </head>
 <body>
-<<<<<<< HEAD
-  @@include('html/header.html', {})
-  <main class="main">
-
-  </main>
-  @@include('html/footer.html', {})
-=======
   <header class="header">
       <div class="header__inner">
         <div class="header__burger burger">
@@ -35,7 +28,94 @@
       </div>
 </header>
   <main class="main">
-
+    <section class="pack">
+      <div class="container">
+        <div class="pack__inner">
+          <p class="pack__title">Alex, we made personalized pack for you!</p>
+          <p class="pack__subtitle">
+            Recommenadation
+          </p>
+          <p class="pack__text">
+            Your recommendation is based on your answers and our database of clinical research. This health plan, made just for you, is recommended for you to feel your best today while supporting long-term health.
+          </p>
+        </div>
+      </div>
+      <div class="pack__wrapper">
+        <p class="pack__wrapper-title">
+          Your Personalized Pack
+        </p>
+        <div class="card__wrapper">
+          <div class="card">
+            <div class="card__box">
+              <img class="card__box-img" src="./img/pack/img-1.png" alt="#">
+            </div>
+            <div class="card__body">
+              <p class="card__suptitle">
+                Vitamins & Dietary Supplements
+              </p>
+              <p class="card__title">
+                Ortho B Complex
+              </p>
+              <p class="card__price">
+                $61.98
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__box">
+              <img class="card__box-img" src="./img/pack/img-2.png" alt="#">
+            </div>
+            <div class="card__body">
+              <p class="card__suptitle">
+                Minerals
+              </p>
+              <p class="card__title">
+                Metagenics - 500-C Methoxyflavone
+              </p>
+              <p class="card__price">
+                $61.98
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__discount">-45%</div>
+            <div class="card__box">
+              <img class="card__box-img" src="./img/pack/img-1.png" alt="#">
+            </div>
+           <div class="card__body">
+            <p class="card__suptitle">
+              Vitamins & Dietary Supplements
+            </p>
+            <p class="card__title">
+              Ortho Molecular - Vitamin D
+            </p>
+            <p class="card__price card__price--discount">
+              <span>$61.98</span> $61.98
+            </p>
+           </div>
+          </div>
+          <div class="card">
+            <div class="card__box">
+              <img class="card__box-img" src="./img/pack/img-3.png" alt="#">
+            </div>
+            <div class="card__body">
+              <p class="card__suptitle">
+                Vitamins & Dietary Supplements
+              </p>
+              <p class="card__title">
+                Ortho Molecular - Vitamin K2
+              </p>
+              <p class="card__price">
+                $61.98
+              </p>
+            </div>
+          </div>
+        </div>
+        <a class="pack__btn" href="#">
+          Continue
+        </a>
+      </div>
+    </section>
   </main>
   <footer class="footer">
   <div class="container">
@@ -144,7 +224,6 @@
     </p>
   </div>
 </footer>
->>>>>>> 2016c26cd5fff543dc653a13f1ac6e299598a724
   <script src="./js/app.min.js"></script>
 </body>
 </html>
