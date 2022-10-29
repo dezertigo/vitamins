@@ -179,6 +179,10 @@ body {
   padding: 0 15px;
 }
 
+.hero.active {
+  z-index: -1;
+}
+
 .quiz {
   min-height: 100vh;
   background: linear-gradient(90deg, #8172dd 50%, #faf8f6 50%);

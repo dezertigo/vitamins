@@ -1,5 +1,58 @@
 import Swiper, {Navigation} from 'swiper';
 
+
+
+const burger = document.querySelector('.burger');
+const hero = document.querySelector('.hero');
+const heroAside = document.querySelector('.header-aside');
+const userLinks = document.querySelectorAll('.header__user-link');
+const itemShop = document.querySelector('.header-aside__item-shop');
+const itemInfo = document.querySelector('.header-aside__item-info');
+const itemProfile = document.querySelector('.header__user-link--user');
+const shopAside = document.querySelector('.shop-aside');
+const infoAside = document.querySelector('.info-aside');
+const profileAside = document.querySelector('.profile-aside');
+const shopBack = document.querySelector('.shop-aside__back');
+const infoBack = document.querySelector('.info-aside__back');
+const profileBack = document.querySelector('.profile-aside__back');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    hero.classList.toggle('active');
+    heroAside.classList.toggle('active');
+    userLinks.forEach(item => {
+        item.classList.toggle('active');
+    });
+});
+
+itemShop.addEventListener('click', () => {
+    heroAside.classList.remove('active');
+    shopAside.classList.add('active');
+});
+
+itemInfo.addEventListener('click', () => {
+    heroAside.classList.remove('active');
+    infoAside.classList.add('active');
+});
+
+itemProfile.addEventListener('click', () => {
+    heroAside.classList.remove('active');
+    profileAside.classList.add('active');
+});
+shopBack.addEventListener('click', () => {
+    shopAside.classList.remove('active');
+    heroAside.classList.add('active');
+});
+infoBack.addEventListener('click', () => {
+    infoAside.classList.remove('active');
+    heroAside.classList.add('active');
+});
+profileBack.addEventListener('click', () => {
+    profileAside.classList.remove('active');
+    heroAside.classList.add('active');
+});
+
+
 if (document.querySelector('body.home-page')) {
     new Swiper('.products__slider', {
         breakpoints: {
@@ -257,7 +310,6 @@ if (document.querySelector('header.header')) {
     cart.addEventListener('click', () => {
         cartWrap.classList.add('active');
         cartBlock.classList.add('active');
-        
     })
     cartClose.addEventListener('click', () => {
         cartWrap.classList.remove('active');

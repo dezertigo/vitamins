@@ -36,3 +36,8 @@ body {
     padding: 0 20px;
   }
 }
+.hero {
+  &.active {
+    z-index: -1;
+  }
+}

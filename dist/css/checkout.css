@@ -203,6 +203,10 @@ body {
   padding: 0 15px;
 }
 
+.hero.active {
+  z-index: -1;
+}
+
 .checkout-page .header {
   padding: 30px 0;
 }
