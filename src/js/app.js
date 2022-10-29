@@ -36,8 +36,8 @@ itemInfo.addEventListener('click', () => {
 });
 
 itemProfile.addEventListener('click', () => {
-    heroAside.classList.remove('active');
-    profileAside.classList.add('active');
+    heroAside.classList.toggle('active');
+    profileAside.classList.toggle('active');
 });
 shopBack.addEventListener('click', () => {
     shopAside.classList.remove('active');
