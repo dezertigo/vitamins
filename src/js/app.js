@@ -16,41 +16,44 @@ const shopBack = document.querySelector('.shop-aside__back');
 const infoBack = document.querySelector('.info-aside__back');
 const profileBack = document.querySelector('.profile-aside__back');
 
-burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-    hero.classList.toggle('active');
-    heroAside.classList.toggle('active');
-    userLinks.forEach(item => {
-        item.classList.toggle('active');
+if (burger) {
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        hero.classList.toggle('active');
+        heroAside.classList.toggle('active');
+        userLinks.forEach(item => {
+            item.classList.toggle('active');
+        });
     });
-});
+    itemShop.addEventListener('click', () => {
+        heroAside.classList.remove('active');
+        shopAside.classList.add('active');
+    });
+    
+    itemInfo.addEventListener('click', () => {
+        heroAside.classList.remove('active');
+        infoAside.classList.add('active');
+    });
+    
+    itemProfile.addEventListener('click', () => {
+        heroAside.classList.toggle('active');
+        profileAside.classList.toggle('active');
+    });
+    shopBack.addEventListener('click', () => {
+        shopAside.classList.remove('active');
+        heroAside.classList.add('active');
+    });
+    infoBack.addEventListener('click', () => {
+        infoAside.classList.remove('active');
+        heroAside.classList.add('active');
+    });
+    profileBack.addEventListener('click', () => {
+        profileAside.classList.remove('active');
+        heroAside.classList.add('active');
+    });
+}
 
-itemShop.addEventListener('click', () => {
-    heroAside.classList.remove('active');
-    shopAside.classList.add('active');
-});
 
-itemInfo.addEventListener('click', () => {
-    heroAside.classList.remove('active');
-    infoAside.classList.add('active');
-});
-
-itemProfile.addEventListener('click', () => {
-    heroAside.classList.toggle('active');
-    profileAside.classList.toggle('active');
-});
-shopBack.addEventListener('click', () => {
-    shopAside.classList.remove('active');
-    heroAside.classList.add('active');
-});
-infoBack.addEventListener('click', () => {
-    infoAside.classList.remove('active');
-    heroAside.classList.add('active');
-});
-profileBack.addEventListener('click', () => {
-    profileAside.classList.remove('active');
-    heroAside.classList.add('active');
-});
 
 
 if (document.querySelector('body.home-page')) {

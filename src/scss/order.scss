@@ -1,0 +1,113 @@
+@import 'global';
+
+.order-page {
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .order {
+    @media (max-width: 350px) {
+      padding: 0 20px;
+    }
+    &__logo {
+      max-width: 168px;
+      width: 100%;
+      margin: 0 auto 80px;
+      @media (max-width: 500px) {
+        max-width: 84px;
+        margin-bottom: 16px;
+      }
+    }
+    &__logo-img {
+      width: 100%;
+      height: 100%;
+
+    }
+    &__content {
+      @media (max-width: 500px) {
+        transform: translateY(15px);
+      }
+      @media (max-width: 350px) {
+        transform: translateY(14px);
+      }
+    }
+    &__title {
+      @extend %effra-500;
+      font-size: 26px;
+      line-height: 31px;
+      margin: 0 auto 10px;
+      text-align: center;
+      @media (max-width: 500px) {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 14px;
+      }
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 28px;
+      margin: 0 auto 23px;
+      text-align: center;
+      @media (max-width: 500px) {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 20px;
+      }
+    }
+    &__btn {
+      @extend %btn;
+      @extend %effra-700;
+      font-size: 20px;
+      line-height: 24px;
+      max-width: 330px;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 50px;
+      background-color: #FF7D4E;
+      color: #fff;
+      border: 0;
+      border-radius: 100px;
+      @media (max-width: 500px) {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 18px;
+      }
+    }
+    &__line {
+      max-width: 508px;
+      background-color: #f2f2f2;
+      height: 1px;
+      margin-bottom: 40px;
+      @media (max-width:500px) {
+        margin-bottom: 36px;
+      }
+    }
+    &__problems {
+      text-align: center;
+      font-size: 14px;
+      line-height: 19px;
+      opacity: 0.5;
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 0 20px;
+      @media (max-width: 500px) {
+        span {
+          display: block;
+        }
+      }
+      @media (max-width: 350px) {
+        padding: 0;
+        &--width {
+          max-width: 220px;
+        }
+        span {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
